@@ -1,0 +1,85 @@
+.container {
+    width: 100%;
+    height: auto;
+}
+.container__txt {
+    width: 60%;
+    margin: 30px;
+}
+.container__courses {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+.courses-item {
+    background-image: url(../../img/bg-prueba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    margin: 0 10px;
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.courses-item-title {
+    color: $colorCuatroButton;
+    font-size: 21px;
+}
+.courses-item-title::first-letter{
+    text-transform: uppercase;
+}
+.courses-item-button {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: $colorCuatroButton;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $colorTres;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.courses-item-button:hover {
+    background-color: $colorCuatro;
+    color: $colorCuatroButton;
+}
+.container__game {
+    width: 96%;
+    height: 500px;
+    background-image: url(../../img/bg-prueba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    text-align: center;
+}
+.game__button {
+    width: 170px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: $colorCuatroButton;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $colorTres;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.game__button:hover {
+    background-color: $colorCuatro;
+    color: $colorCuatroButton;
+}
+
+

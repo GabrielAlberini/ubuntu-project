@@ -1,0 +1,52 @@
+header {
+    background: $colorUno;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+.menu{
+    width: 90%;
+    margin: 0 auto;
+}
+.menu__img {
+    width: 120px;
+    height: auto;
+    float: left;
+    padding: 15px;
+    cursor: pointer;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    text-decoration: none;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 35px 10px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: $colorSeis;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $colorTres;
+}
+nav ul li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
