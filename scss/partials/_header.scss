@@ -17,35 +17,35 @@ header {
     cursor: pointer;
 }
 
-nav {
+.navBar {
     float: right;
 }
 
-nav ul {
+.nav__list {
     text-decoration: none;
     display: flex;
 }
 
-nav ul li {
+.nav__list-option {
     list-style: none;
     padding: 35px 10px;
 
 }
 
-nav ul li a {
+.nav__list-option-link {
     text-decoration: none;
     color: $colorSeis;
     text-transform: uppercase;
     font-weight: bold;
 }
-nav ul li a::after {
+.nav__list-option-link::after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
     background: $colorTres;
 }
-nav ul li a:hover::after {
+.nav__list-option-link:hover::after {
     width: 100%;
     transition: width .3s;
 }
