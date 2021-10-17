@@ -1,0 +1,52 @@
+header {
+    background: $colorUno;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+.menu {
+    width: 90%;
+    margin: 0 auto;
+}
+.menu__img {
+    width: 120px;
+    height: auto;
+    float: left;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.navBar {
+    float: right;
+}
+
+.nav__list {
+    text-decoration: none;
+    display: flex;
+}
+
+.nav__list-option {
+    list-style: none;
+    padding: 35px 10px;
+
+}
+
+.nav__list-option-link {
+    text-decoration: none;
+    color: $colorSeis;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav__list-option-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $colorTres;
+}
+.nav__list-option-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+

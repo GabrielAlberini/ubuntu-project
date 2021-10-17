@@ -1,101 +1,85 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.container {
+    width: 100%;
+    height: auto;
 }
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.container__txt {
+    width: 60%;
+    margin: 30px;
 }
-
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    background-color: #a3c3a3;
+.container__courses {
     display: flex;
-    justify-content: space-between;
-    padding: 1.5em 1em;
-    .logo {
-        background-color: #258e25;
-        margin-left: 1.75em;
-        width: 7.5%;
-    }
-    ul {
-        display: flex;
-        padding: 3em 0;
-        li {
-            font-size: 1.2rem;
-            margin: 0 2em;
-            a {
-                color: #258e25;
-                text-decoration: none;
-            }
-        }
-    }
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+.courses-item {
+    background-image: url(../../img/bg-prueba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    margin: 0 10px;
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.courses-item-title {
+    color: $colorCuatroButton;
+    font-size: 21px;
+}
+.courses-item-title::first-letter{
+    text-transform: uppercase;
+}
+.courses-item-button {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: $colorCuatroButton;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $colorTres;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.courses-item-button:hover {
+    background-color: $colorCuatro;
+    color: $colorCuatroButton;
+}
+.container__game {
+    width: 96%;
+    height: 500px;
+    background-image: url(../../img/bg-prueba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    text-align: center;
+}
+.game__button {
+    width: 170px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: $colorCuatroButton;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $colorTres;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.game__button:hover {
+    background-color: $colorCuatro;
+    color: $colorCuatroButton;
 }
 
-main {
-    padding: 1em 2.5em;
-    .initialParagraph {
-        margin-bottom: 1em;
-        width: 75ch;
-        h4 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5em;
-        }
-        p {
-            line-height: 1.25em;
-        }
-    }
-    .cards {
-        background-color: lightblue;
-        display: flex;
-        justify-content: space-between;
-        margin: 1.5em 0;
-        .card {
-            background-color: grey;
-            border-radius: 35px;
-            display: flex;
-            flex-direction: column;
-            height: 250px;
-            justify-content: space-between;
-            padding: 1em;
-            width: 22.5%;
-            h2 {
-                color: #ffe3b0;
-                font-size: 1.5rem;
-                padding: 0.5em;
-            }
-            button {
-                background-color: #e4b96b;
-                border-radius: 10px;
-                color: #664609;
-                margin-left: auto;
-                padding: 0.75em 1em;
-                width: 100px;
-            }
-        }
-    }
-    .bigPicture {
-        background-color: teal;
-        display: flex;
-        height: 30vh;
-        button {
-            background-color: #dfc5c9;
-            border-radius: 10px;
-            color: #664609;
-            font-size: 1.5rem;
-            margin: 1.75em auto auto auto;
-            padding: 0.5em 1.25em;
-            width: 325px;
-        }
-    }
-}
+
