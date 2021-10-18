@@ -8,28 +8,41 @@
 }
 .container__courses {
     display: flex;
-    width: 100%;
-    margin: auto;
+    flex-wrap: wrap;
+    margin: 1rem auto;
     padding: 0 20px;
-}
-.courses-item {
-    background-image: url(../../img/bg-prueba.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px;
-    margin: 0 10px;
-    height: 150px;
     width: 100%;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    .courses-item {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); // VER TEMA DEL BORDE QUE GENERA
+        height: 175px;
+        margin: 0 10px;
+        padding: 10px;
+        position: relative;
+        width: 100%;
+        &.courses-item-topLeft {
+            background-image: url(../img/card-01.png);
+        }
+        &.courses-item-topRight {
+            background-image: url(../img/card-02.png);
+        }
+        &.courses-item-bottomLeft {
+            background-image: url(../img/card-03.png);
+        }
+        &.courses-item-bottomRight {
+            background-image: url(../img/card-04.png);
+        }
+    }
 }
+
 .courses-item-title {
     color: $colorCuatroButton;
     font-size: 21px;
 }
-.courses-item-title::first-letter{
+.courses-item-title::first-letter {
     text-transform: uppercase;
 }
 .courses-item-button {
@@ -46,23 +59,22 @@
     font-size: 16px;
     text-transform: uppercase;
     color: $colorTres;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .courses-item-button:hover {
     background-color: $colorCuatro;
     color: $colorCuatroButton;
 }
 .container__game {
-    width: 96%;
-    height: 500px;
-    background-image: url(../../img/bg-prueba.jpg);
+    height: 175px;
+    background-image: url(../img/card-oraculo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 20px auto;
+    margin: 0 20px;
     padding: 30px;
     border-radius: 5px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     text-align: center;
 }
 .game__button {
@@ -75,11 +87,62 @@
     font-size: 16px;
     text-transform: uppercase;
     color: $colorTres;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .game__button:hover {
     background-color: $colorCuatro;
     color: $colorCuatroButton;
 }
 
-
+.container__top {
+    background-color: $colorDos;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 90%;
+    .container__astrologia {
+        background-color: $colorCinco;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem auto;
+        width: 97.5%;
+        .astrologia {
+            .astrologia-title {
+                border-radius: 10px;
+                background-color: $colorTres;
+                color: $colorCuatroButton;
+                padding: 0.5rem 0;
+                text-align: center;
+                text-transform: uppercase;
+                width: 100%;
+            }
+            .astrologia-text {
+                margin: 0 auto;
+                padding: 5px 10px;
+                text-align: left;
+            }
+        }
+    }
+    .cartaNatal,
+    .transitos,
+    .revolucionSolar {
+        background-color: $colorCuatro;
+        border-radius: 10px;
+        margin: 1rem auto;
+        width: 85%;
+        .cartaNatal-title,
+        .transitos-title,
+        .revolucionSolar-title {
+            color: $colorCuatroButton;
+            padding: 0.5rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+        }
+        .cartaNatal-text,
+        .transitos-text,
+        .revolucionSolar-text {
+            padding: 5px 1.25rem;
+        }
+    }
+}

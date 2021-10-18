@@ -13,35 +13,34 @@
 }
 
 header {
-  background: #b4d3c3;
+  background: #e8ba88;
   width: 100%;
-  clear: both;
-  content: '';
-  display: table;
 }
 
 .menu {
-  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
+  width: 90%;
 }
 
 .menu__img {
   width: 120px;
   height: auto;
-  float: left;
   padding: 15px;
   cursor: pointer;
 }
 
 .navBar {
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav__list {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .nav__list-option {
@@ -51,7 +50,7 @@ header {
 
 .nav__list-option-link {
   text-decoration: none;
-  color: #79c99d;
+  color: #e0743e;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -84,24 +83,39 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem auto;
   padding: 0 20px;
+  width: 100%;
 }
 
-.courses-item {
-  background-image: url(../../img/bg-prueba.jpg);
+.container__courses .courses-item {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px;
-  margin: 0 10px;
-  height: 150px;
-  width: 100%;
   border-radius: 10px;
+  height: 175px;
+  margin: 0 10px;
+  padding: 10px;
   position: relative;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 100%;
+}
+
+.container__courses .courses-item.courses-item-topLeft {
+  background-image: url(../img/card-01.png);
+}
+
+.container__courses .courses-item.courses-item-topRight {
+  background-image: url(../img/card-02.png);
+}
+
+.container__courses .courses-item.courses-item-bottomLeft {
+  background-image: url(../img/card-03.png);
+}
+
+.container__courses .courses-item.courses-item-bottomRight {
+  background-image: url(../img/card-04.png);
 }
 
 .courses-item-title {
@@ -137,17 +151,14 @@ header {
 }
 
 .container__game {
-  width: 96%;
-  height: 500px;
-  background-image: url(../../img/bg-prueba.jpg);
+  height: 175px;
+  background-image: url(../img/card-oraculo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 20px auto;
+  margin: 0 20px;
   padding: 30px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   text-align: center;
 }
 
@@ -168,6 +179,78 @@ header {
 .game__button:hover {
   background-color: #e7c6b5;
   color: #e0743e;
+}
+
+.container__top {
+  background-color: #dee0d2;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.container__top .container__astrologia {
+  background-color: #efe0c9;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem auto;
+  width: 97.5%;
+}
+
+.container__top .container__astrologia .astrologia .astrologia-title {
+  border-radius: 10px;
+  background-color: #e8ba88;
+  color: #e0743e;
+  padding: 0.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.container__top .container__astrologia .astrologia .astrologia-text {
+  margin: 0 auto;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.container__top .cartaNatal,
+.container__top .transitos,
+.container__top .revolucionSolar {
+  background-color: #e7c6b5;
+  border-radius: 10px;
+  margin: 1rem auto;
+  width: 85%;
+}
+
+.container__top .cartaNatal .cartaNatal-title,
+.container__top .cartaNatal .transitos-title,
+.container__top .cartaNatal .revolucionSolar-title,
+.container__top .transitos .cartaNatal-title,
+.container__top .transitos .transitos-title,
+.container__top .transitos .revolucionSolar-title,
+.container__top .revolucionSolar .cartaNatal-title,
+.container__top .revolucionSolar .transitos-title,
+.container__top .revolucionSolar .revolucionSolar-title {
+  color: #e0743e;
+  padding: 0.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.container__top .cartaNatal .cartaNatal-text,
+.container__top .cartaNatal .transitos-text,
+.container__top .cartaNatal .revolucionSolar-text,
+.container__top .transitos .cartaNatal-text,
+.container__top .transitos .transitos-text,
+.container__top .transitos .revolucionSolar-text,
+.container__top .revolucionSolar .cartaNatal-text,
+.container__top .revolucionSolar .transitos-text,
+.container__top .revolucionSolar .revolucionSolar-text {
+  padding: 5px 1.25rem;
 }
 
 .container__icons {

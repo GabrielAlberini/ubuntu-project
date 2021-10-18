@@ -1,29 +1,26 @@
 header {
-    background: $colorUno;
+    background: $colorTres; // REVISAR
     width: 100%;
-    clear: both;
-    content: '';
-    display: table;
 }
 .menu {
-    width: 90%;
+    display: flex;
     margin: 0 auto;
+    width: 90%;
 }
 .menu__img {
     width: 120px;
     height: auto;
-    float: left;
     padding: 15px;
     cursor: pointer;
 }
 
 .navBar {
-    float: right;
+    display: flex;
 }
 
 .nav__list {
     text-decoration: none;
-    display: flex;
+    display: none;  // SERÁ DISPLAY FLEX EN DESKTOP
 }
 
 .nav__list-option {
@@ -34,7 +31,7 @@ header {
 
 .nav__list-option-link {
     text-decoration: none;
-    color: $colorSeis;
+    color: $colorCuatroButton; // REVISAR
     text-transform: uppercase;
     font-weight: bold;
 }
