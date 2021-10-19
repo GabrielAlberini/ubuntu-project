@@ -16,10 +16,10 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 10px;
+        border-radius: 20px;
         // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); // VER TEMA DEL BORDE QUE GENERA
         height: 175px;
-        margin: 0 10px;
+        margin: 10px;
         padding: 10px;
         position: relative;
         width: 100%;
@@ -39,32 +39,42 @@
 }
 
 .courses-item-title {
-    color: $colorCuatroButton;
-    font-size: 21px;
-}
-.courses-item-title::first-letter {
-    text-transform: uppercase;
-}
-.courses-item-button {
-    display: block;
+    color: #f9d8a7;
+    font-size: 30px;
+    font-family: Alike;
+    font-weight: 400;
+    left: 1.5rem;
+    line-height: 38px;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 80px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background: $colorCuatroButton;
-    font-size: 16px;
     text-transform: uppercase;
-    color: $colorTres;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    top: 1.5rem;
 }
+
+.courses-item-button {
+    background: $colorTres;
+    border: none;
+    border-radius: 10px;
+    bottom: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: #7b4f1f;
+    cursor: pointer;
+    display: block;
+    font-family: $roboto;
+    font-size: 18px;
+    font-weight: 400;
+    height: 34px;
+    line-height: 21px;
+    position: absolute;
+    right: 1rem;
+    text-transform: uppercase;
+    width: 125px;
+}
+
 .courses-item-button:hover {
     background-color: $colorCuatro;
     color: $colorCuatroButton;
 }
+
 .container__game {
     height: 175px;
     background-image: url(../img/card-oraculo.png);
@@ -73,21 +83,22 @@
     background-size: cover;
     margin: 0 20px;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 20px;
     // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     text-align: center;
 }
 .game__button {
-    width: 170px;
-    padding: 5px 10px;
-    border-radius: 5px;
+    background: $colorCuatro;
     border: none;
-    cursor: pointer;
-    background: $colorCuatroButton;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: $colorTres;
+    border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: #a76a4b;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    width: 170px;
 }
 .game__button:hover {
     background-color: $colorCuatro;
@@ -95,7 +106,7 @@
 }
 
 .container__top {
-    background-color: $colorDos;
+    background-color: rgba(239, 224, 201, 0.5);
     border-radius: 10px;
     margin: 0 auto;
     width: 90%;
@@ -107,18 +118,26 @@
         margin: 1rem auto;
         width: 97.5%;
         .astrologia {
+            position: relative;
             .astrologia-title {
                 border-radius: 10px;
                 background-color: $colorTres;
-                color: $colorCuatroButton;
+                color: #7b4f1f;
+                font-family: Alike;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 20px;
                 padding: 0.5rem 0;
+                position: absolute;
                 text-align: center;
                 text-transform: uppercase;
+                top: -10px;
                 width: 100%;
             }
             .astrologia-text {
+                font-family: $roboto;
                 margin: 0 auto;
-                padding: 5px 10px;
+                padding: 40px 5px 10px 5px;
                 text-align: left;
             }
         }
@@ -133,7 +152,12 @@
         .cartaNatal-title,
         .transitos-title,
         .revolucionSolar-title {
-            color: $colorCuatroButton;
+            color: #75513e;
+            font-family: Alike;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 23px;
             padding: 0.5rem 0;
             text-align: center;
             text-transform: uppercase;
@@ -142,7 +166,116 @@
         .cartaNatal-text,
         .transitos-text,
         .revolucionSolar-text {
+            color: #75513e;
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
             padding: 5px 1.25rem;
+        }
+    }
+    .consult {
+        background-color: $colorDos;
+        border-radius: 5px;
+        margin: 1rem auto;
+        padding: 0.5rem;
+        .consult-title,
+        .consult-text {
+            color: #5b7d6c;
+            margin: 0.25rem auto;
+            text-align: center;
+        }
+        .consult-title {
+            font-family: Alike;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        .consult-text {
+            font-family: $roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px;
+        }
+    }
+    .consult-description {
+        color: #7b4f1f;
+        font-family: $roboto;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 12px;
+        padding: 0 0.25rem 1rem 0.25rem;
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+    .vouchers {
+        border-radius: 5px;
+        background-color: $colorTres;
+        padding: 1rem 0.125rem;
+        text-align: center;
+        width: 100%;
+        .vouchers-title {
+            color: #7b4f1f;
+            font-family: Alike;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 1rem;
+        }
+        .vouchers-text {
+            color: #7b4f1f;
+            font-family: $roboto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .astrologiaGrupal {
+        background-color: $colorDos;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem auto 0.75rem auto;
+        padding: 0.5rem 1rem;
+        .astrologiaGrupal-title {
+            color: #5b7d6c;
+            font-family: Alike;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        .astrologiaGrupal-subtitle {
+            color: #5b7d6c;
+            font-family: $roboto;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        .astrologiaGrupal-text {
+            color: #5b7d6c;
+            font-family: $roboto;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+        }
+    }
+    .astrologiaGrupal-description {
+        padding: 0.75rem 0.25rem;
+        p {
+            color: #7b4f1f;
+            font-family: $roboto;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            margin: 0 auto 0.75rem auto;
         }
     }
 }

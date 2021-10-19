@@ -1,6 +1,7 @@
 /*Colors*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
-  font-family: calibri;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -94,9 +95,9 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 20px;
   height: 175px;
-  margin: 0 10px;
+  margin: 10px;
   padding: 10px;
   position: relative;
   width: 100%;
@@ -119,30 +120,36 @@ header {
 }
 
 .courses-item-title {
-  color: #e0743e;
-  font-size: 21px;
-}
-
-.courses-item-title::first-letter {
+  color: #f9d8a7;
+  font-size: 30px;
+  font-family: Alike;
+  font-weight: 400;
+  left: 1.5rem;
+  line-height: 38px;
+  position: absolute;
   text-transform: uppercase;
+  top: 1.5rem;
 }
 
 .courses-item-button {
-  display: block;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 80px;
-  padding: 5px 10px;
-  border-radius: 5px;
+  background: #e8ba88;
   border: none;
-  cursor: pointer;
-  background: #e0743e;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #e8ba88;
+  border-radius: 10px;
+  bottom: 1rem;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: #7b4f1f;
+  cursor: pointer;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  height: 34px;
+  line-height: 21px;
+  position: absolute;
+  right: 1rem;
+  text-transform: uppercase;
+  width: 125px;
 }
 
 .courses-item-button:hover {
@@ -158,22 +165,23 @@ header {
   background-size: cover;
   margin: 0 20px;
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 20px;
   text-align: center;
 }
 
 .game__button {
-  width: 170px;
-  padding: 5px 10px;
-  border-radius: 5px;
+  background: #e7c6b5;
   border: none;
-  cursor: pointer;
-  background: #e0743e;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #e8ba88;
+  border-radius: 5px;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: #a76a4b;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  width: 170px;
 }
 
 .game__button:hover {
@@ -182,7 +190,7 @@ header {
 }
 
 .container__top {
-  background-color: #dee0d2;
+  background-color: rgba(239, 224, 201, 0.5);
   border-radius: 10px;
   margin: 0 auto;
   width: 90%;
@@ -200,19 +208,30 @@ header {
   width: 97.5%;
 }
 
+.container__top .container__astrologia .astrologia {
+  position: relative;
+}
+
 .container__top .container__astrologia .astrologia .astrologia-title {
   border-radius: 10px;
   background-color: #e8ba88;
-  color: #e0743e;
+  color: #7b4f1f;
+  font-family: Alike;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
   padding: 0.5rem 0;
+  position: absolute;
   text-align: center;
   text-transform: uppercase;
+  top: -10px;
   width: 100%;
 }
 
 .container__top .container__astrologia .astrologia .astrologia-text {
+  font-family: "Roboto", sans-serif;
   margin: 0 auto;
-  padding: 5px 10px;
+  padding: 40px 5px 10px 5px;
   text-align: left;
 }
 
@@ -234,7 +253,12 @@ header {
 .container__top .revolucionSolar .cartaNatal-title,
 .container__top .revolucionSolar .transitos-title,
 .container__top .revolucionSolar .revolucionSolar-title {
-  color: #e0743e;
+  color: #75513e;
+  font-family: Alike;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
   padding: 0.5rem 0;
   text-align: center;
   text-transform: uppercase;
@@ -250,7 +274,136 @@ header {
 .container__top .revolucionSolar .cartaNatal-text,
 .container__top .revolucionSolar .transitos-text,
 .container__top .revolucionSolar .revolucionSolar-text {
+  color: #75513e;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
   padding: 5px 1.25rem;
+}
+
+.container__top .consult {
+  background-color: #dee0d2;
+  border-radius: 5px;
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
+
+.container__top .consult .consult-title,
+.container__top .consult .consult-text {
+  color: #5b7d6c;
+  margin: 0.25rem auto;
+  text-align: center;
+}
+
+.container__top .consult .consult-title {
+  font-family: Alike;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.container__top .consult .consult-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.container__top .consult-description {
+  color: #7b4f1f;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  padding: 0 0.25rem 1rem 0.25rem;
+}
+
+.container__top .consult-description p {
+  margin-bottom: 1rem;
+}
+
+.container__top .vouchers {
+  border-radius: 5px;
+  background-color: #e8ba88;
+  padding: 1rem 0.125rem;
+  text-align: center;
+  width: 100%;
+}
+
+.container__top .vouchers .vouchers-title {
+  color: #7b4f1f;
+  font-family: Alike;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 1rem;
+}
+
+.container__top .vouchers .vouchers-text {
+  color: #7b4f1f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.container__top .astrologiaGrupal {
+  background-color: #dee0d2;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.5rem auto 0.75rem auto;
+  padding: 0.5rem 1rem;
+}
+
+.container__top .astrologiaGrupal .astrologiaGrupal-title {
+  color: #5b7d6c;
+  font-family: Alike;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.container__top .astrologiaGrupal .astrologiaGrupal-subtitle {
+  color: #5b7d6c;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.container__top .astrologiaGrupal .astrologiaGrupal-text {
+  color: #5b7d6c;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.container__top .astrologiaGrupal-description {
+  padding: 0.75rem 0.25rem;
+}
+
+.container__top .astrologiaGrupal-description p {
+  color: #7b4f1f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0 auto 0.75rem auto;
 }
 
 .container__icons {
