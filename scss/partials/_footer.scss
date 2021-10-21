@@ -1,18 +1,31 @@
-// .container__icons {
-//     display: flex;
-//     width: 100%;
-//     height: 50px;
-//     text-align: center;
-//     justify-content: center;
-//     align-items: center;
-//     background: $colorUno;
-//     margin-top: 40px;
-// }
-// .icons {
-//     font-size: 30px;
-//     padding: 10px;
-// }
-// .icons:hover {
-//     color: rgb(71, 71, 71);
-//     cursor: pointer;
-// }
+footer {
+    width: 100%;
+    height: 144px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8BA88;
+}
+.container__icons {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.cont__icons {
+    border-radius: 50%;
+}
+.icons {
+    font-size: 30px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 20px;
+    color: white;
+}
+.icons:hover {
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+}
