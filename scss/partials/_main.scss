@@ -1,132 +1,96 @@
 .container {
     width: 100%;
-    height: auto;
-    .container__txt {
-        width: 50%;
-        margin: 30px;
-        line-height: 26px;
-        text-align: justify;
-        .container__txt-title {
-            padding-bottom: 10px;
-        }
-    }
+    padding: 2%;
     .container__courses {
-        display: flex;
         width: 100%;
-        margin: 20px auto;
-        padding: 0 20px;
-        .bg-degrade {
-            display: flex;
-            background: linear-gradient(to bottom, #535252, transparent);
-            z-index: 12;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        .cont__item-gral {
             width: 100%;
-            height: 100%;
+            height: 215px;
+            border-radius: 20px;
+            padding: 20px;
+            position: relative;
+
+            .courses-item-title {
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: #F9D8A7;
+                line-height: 38px;
+                z-index: 4000;
+                position: absolute;
+            }
+            .courses-item-button {
+                width: 135px;
+                height: 48px;
+                border-radius: 10px;
+                position: absolute;
+                border: none;
+                background-color: #E8BA88;
+                bottom: 20px;
+                right: 20px;
+                color: #7B4F1F;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 400;
+                cursor: pointer;
+                z-index: 5000;
+            }
+        }
+        .bg-degrade {
             position: absolute;
             top: 0;
             left: 0;
             border-radius: 20px;
-        }
-        .courses-item-1,
-        .courses-item-2,
-        .courses-item-3,
-        .courses-item-4 {
-            padding: 10px;
-            margin: 0 10px;
-            height: 180px;
             width: 100%;
-            border-radius: 20px;
-            position: relative;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            height: 100%;
+            background: linear-gradient(to bottom, #535252, #B4D3C300);
+            z-index: 3000;
         }
         .courses-item-1 {
             background-image: url(../../img/card1.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
         }
         .courses-item-2 {
             background-image: url(../../img/card2.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+
         }
         .courses-item-3 {
             background-image: url(../../img/card3.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
         }
         .courses-item-4 {
             background-image: url(../../img/card4.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .courses-item-title {
-            position: relative;
-            z-index: 1000;
-            color: $colorTitles;
-            font-size: 21px;
-            text-transform: uppercase;
-            font-weight: 100;
-        }
-        .courses-item-button {
-            display: block;
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            width: auto;
-            padding: 5px 10px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            background: $colorTres;
-            font-size: 14px;
-            text-transform: uppercase;
-            color: $colorCuatroButton;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            z-index: 2000;
-            font-weight: 100;
-            &:hover {
-                background-color: $colorCuatro;
-                color: $colorCuatroButton;
-            }
         }
     }
     .container__game {
-        width: 95%;
-        height: 330px;
+        width: 100%;
+        height: 416px;
+        margin-top: 2%;
         background-image: url(../../img/cardoraculo.png);
-        background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
-        margin: 20px auto;
-        padding: 30px;
-        border-radius: 50px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        text-align: center;
+        position: relative;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
         .game__button {
-            width: auto;
-            padding: 5px 10px;
-            border-radius: 5px;
+            width: 235px;
+            height: 56px;
+            position: absolute;
+            top: 20%;
+            left: 41%;
+            border-radius: 10px;
+            position: absolute;
             border: none;
-            cursor: pointer;
-            background: $colorCinco;
-            font-size: 20px;
-            font-weight: bold;
+            background-color: #E8BA88;
+            color: #7B4F1F;
             text-transform: uppercase;
-            color: $colorCuatroButton;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            &:hover {
-                background-color: $colorCuatro;
-                color: $colorCuatroButton;
-            }
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+            z-index: 5000;
         }
     }
 }
-
-
-
 
 
 
