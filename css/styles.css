@@ -444,8 +444,19 @@
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
+  animation-name: bounce;
+  animation-duration: 5s;
+  animation-timing-function: linear;
 }
 
+@keyframes bounce {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .buttonGame {
   padding: 15px;
   border: none;
