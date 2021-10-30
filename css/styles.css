@@ -18,56 +18,121 @@ header {
   width: 100%;
 }
 
-.menu {
+header .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
   width: 90%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.menu__img {
+header .navBar .nav__img {
   width: 120px;
   height: auto;
   padding: 15px;
   cursor: pointer;
 }
 
-.navBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav__list {
+header .navBar .nav__list {
   text-decoration: none;
   display: none;
 }
 
-.nav__list-option {
+header .navBar .nav__list.show {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+header .navBar .nav__list.show .nav__list-option {
+  padding: 1em;
+}
+
+header .navBar .nav__list .nav__list-option {
   list-style: none;
   padding: 35px 10px;
 }
 
-.nav__list-option-link {
+header .navBar .nav__list .nav__list-option .nav__list-option-link {
   text-decoration: none;
   color: #e0743e;
+  cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.nav__list-option-link::after {
-  content: '';
+header .navBar .nav__list .nav__list-option .nav__list-option-link::after {
+  content: "";
   display: block;
   width: 0;
   height: 2px;
   background: #e8ba88;
 }
 
-.nav__list-option-link:hover::after {
-  width: 100%;
-  -webkit-transition: width .3s;
-  transition: width .3s;
+header .navBar .hamburger {
+  background-color: transparent;
+  border: 0;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  font-size: 1.25rem;
+}
+
+header .navBar .hamburger:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  header .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navBar .nav__list {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navBar .nav__list .nav__list-option {
+    list-style: none;
+    padding: 35px 10px;
+  }
+  header .navBar .nav__list .nav__list-option .nav__list-option-link {
+    text-decoration: none;
+    color: #e0743e;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  header .navBar .nav__list .nav__list-option .nav__list-option-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e8ba88;
+  }
+  header .navBar .nav__list .nav__list-option .nav__list-option-link:hover::after {
+    background-color: #000;
+    width: 100%;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+  header .navBar .hamburger {
+    display: none;
+  }
 }
 
 .container {

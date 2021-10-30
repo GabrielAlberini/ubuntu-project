@@ -1,145 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ubuntu | Yo soy porque nosotros somos</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="js/main.js" defer></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="menu">
-            <img class="menu__img" src="img/logo.png" alt="">
-            <nav class="navBar">
-                <ul class="nav__list">
-                    <li class="nav__list-option"><a class="nav__list-option-link" href="#">terapia</a></li>
-                    <li class="nav__list-option"><a class="nav__list-option-link" href="#">voucher</a></li>
-                    <li class="nav__list-option"><a class="nav__list-option-link" href="#">freebies</a></li>
-                    <li class="nav__list-option"><a class="nav__list-option-link" href="#">sobre mi</a></li>
-                    <li class="nav__list-option"><a class="nav__list-option-link" href="#">contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+      <nav class="navBar">
+        <img class="nav__img" src="img/logo.png" alt="" />
+        <button id="hamburger" class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="nav__list" class="nav__list">
+          <li class="nav__list-option">
+            <a class="nav__list-option-link" id="terapia">terapia</a>
+          </li>
+          <li class="nav__list-option">
+            <a class="nav__list-option-link" id="voucher">voucher</a>
+          </li>
+          <li class="nav__list-option">
+            <a class="nav__list-option-link" id="freebies">freebies</a>
+          </li>
+          <li class="nav__list-option">
+            <a class="nav__list-option-link" id="sobre_mi">sobre mi</a>
+          </li>
+          <li class="nav__list-option">
+            <a class="nav__list-option-link" id="contacto">contacto</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <div class="container">
-            <div class="container__courses">
-                <div class="courses-item courses-item-topLeft">
-                    <h3 class="courses-item-title">astrologia</h3>
-                    <button class="courses-item-button">ver más</button>
-                </div>
-                <div class="courses-item courses-item-topRight">
-                    <h3 class="courses-item-title">registros akashicos</h3>
-                    <button class="courses-item-button">ver más</button>
-                </div>
-                <div class="courses-item courses-item-bottomLeft">
-                    <h3 class="courses-item-title">reiki tibetano</h3>
-                    <button class="courses-item-button">ver más</button>
-                </div>
-                <div class="courses-item courses-item-bottomRight">
-                    <h3 class="courses-item-title">kundalini yoga</h3>
-                    <button class="courses-item-button">ver más</button>
-                </div>
-            </div>
-            <div class="container__game">
-                <button class="game__button">ver oráculo</button>
-            </div>
+    <main id="section__main">
+      <div class="container">
+        <div class="container__courses">
+          <div class="courses-item courses-item-topLeft">
+            <!--  Borrar courses-item adelante de top -->
+            <h3 class="courses-item-title">astrologia</h3>
+            <button class="courses-item-button">ver más</button>
+          </div>
+          <div class="courses-item courses-item-topRight">
+            <h3 class="courses-item-title">registros akashicos</h3>
+            <button class="courses-item-button">ver más</button>
+          </div>
+          <div class="courses-item courses-item-bottomLeft">
+            <h3 class="courses-item-title">reiki tibetano</h3>
+            <button class="courses-item-button">ver más</button>
+          </div>
+          <div class="courses-item courses-item-bottomRight">
+            <h3 class="courses-item-title">kundalini yoga</h3>
+            <button class="courses-item-button">ver más</button>
+          </div>
         </div>
-        <div class="container__top">
-            <div class="container__astrologia">
-                <!-- ¿Español o inglés? -->
-                <!-- REVISAR NOMBRE -->
-                <h3 class="astrologia-title">astrologia</h3>
-                <p class="astrologia-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eum
-                    atque aut sit.
-                    Sequi dolorem blanditiis facilis hic doloremque neque quas dolorum modi aut. Nihil voluptate at
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eum
-                    atque aut sit.
-                    Sequi dolorem blanditiis facilis hic doloremque neque quas dolorum modi aut. Nihil voluptate at</p>
-            </div>
-            <div class="container__cartas">
-                <div class="cartaNatal">
-                    <h3 class="cartaNatal-title">carta natal</h3>
-                    <p class="cartaNatal-text"></p>
-                </div>
-                <div class="transitos">
-                    <h3 class="transitos-title">tránsitos</h3>
-                    <p class="transitos-text">La lectura de tránsitos es como los planetas en el cielo “activan”
-                        distintos
-                        puntos de nuestra carta natal y eso trae una sincronicidad con
-                        nuestra vida en la tierra. Los tránsitos muchas veces duran más de un año y son movimientos del
-                        cielo que nos marcan procesos y traen acercarnos con partes nuestra para
-                        el despliegue de nuestro ser en su totalidad.
-
-                    </p>
-                </div>
-                <div class="revolucionSolar">
-                    <h3 class="revolucionSolar-title">revolución solar</h3>
-                    <p class="revolucionSolar-text">La revolución solar cambia cada año y es como está el cielo en el
-                        mismo
-                        día hora y minuto en el que nacimos. Esa foto del cielo nos
-                        acompaña durante el año y es un “pronóstico” de qué energías nos van a estar acompañando. A
-                        través
-                        de su análisis podemos abrirnos a recibirlas, potenciarlas y aceptar
-                        el proceso que nos propone la vida.
-
-                    </p>
-                </div>
-            </div>
-            <div class="container__consults">
-                <div class="consult">
-                    <h3 class="consult-title">Consulta Carta Natal y Tránsitos</h3>
-                    <p class="consult-text">Duración: 1 hora.</p>
-                </div>
-                <div class="consult">
-                    <h3 class="consult-title">Consulta Tránsitos y Revolución Solar</h3>
-                    <p class="consult-text">Duración: 1 hora.</p>
-                </div>
-            </div>
-            <div class="consult-description">
-                <p>Para hacerla es necesario saber la fecha, hora y lugar de nacimiento (según la partida de nacimiento)
-                </p>
-                <p> Modalidad Online. La sesión la grabamos y después te envio el audio para que lo puedas volver a
-                    escuchar cuando necesites.</p>
-                <p>Medios de pago: Transferencia bancaria – mercado pago (+10%) – paypal para exterior.</p>
-
-            </div>
-            <div class="vouchers">
-                <h3 class="vouchers-title">Vouchers para regalar</h3>
-                <p class="vouchers-text">Lectura de Carta Natal y Revolución Solar</p>
-            </div>
-            <div class="astrologiaGrupal">
-                <h3 class="astrologiaGrupal-title">Astrología para empresas y/o grupos</h3>
-                <span class="astrologiaGrupal-subtitle">Duración: 1 a 2 horas</span>
-                <p class="astrologiaGrupal-text">Consiste en un encuentro donde a través del análisis de la carta natal
-                    de cada integrante del equipo
-                    analizamos las energías grupales. Trabajamos en sus puntos fuertes,
-                    aquello que traen como desafío y qué energías se traen los unos a los otros como trama grupal. Es un
-                    espacio de autoconocimiento y fortalecimiento de equipos de trabajo,
-                    tanto a nivel personal como profesional.</p>
-            </div>
-            <div class="astrologiaGrupal-description">
-                <p>Para hacerla es necesario saber la fecha, hora y lugar de nacimiento (según la partida de nacimiento)
-                </p>
-                <p>Modalidad Online. La sesión la grabamos y después te envio el audio para que lo puedas volver a
-                    escuchar cuando necesites.</p>
-                <p>Medios de pago: Transferencia bancaria – mercado pago (+10%) – paypal para exterior.</p>
-            </div>
+        <div class="container__game">
+          <button class="game__button">ver oráculo</button>
         </div>
+      </div>
+      <div class="container__top">
+        <div class="container__astrology">
+          <!-- ¿Español o inglés? -->
+          <!-- REVISAR NOMBRE -->
+          <h3 class="astrology-title">astrologia</h3>
+          <p class="astrology-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+            eum atque aut sit. Sequi dolorem blanditiis facilis hic doloremque
+            neque quas dolorum modi aut. Nihil voluptate at Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Tenetur eum atque aut sit.
+            Sequi dolorem blanditiis facilis hic doloremque neque quas dolorum
+            modi aut. Nihil voluptate at
+          </p>
+        </div>
+        <div class="container__cartas">
+          <!-- cards -->
+          <div class="cartaNatal">
+            <!--cont__natal-->
+            <h3 class="cartaNatal-title">carta natal</h3>
+            <!--natal-title-->
+            <p class="cartaNatal-text"></p>
+            <!--natal-txt-->
+          </div>
+          <div class="transitos">
+            <!--cont__transitos-->
+            <h3 class="transitos-title">tránsitos</h3>
+            <p class="transitos-text">
+              La lectura de tránsitos es como los planetas en el cielo “activan”
+              distintos puntos de nuestra carta natal y eso trae una
+              sincronicidad con nuestra vida en la tierra. Los tránsitos muchas
+              veces duran más de un año y son movimientos del cielo que nos
+              marcan procesos y traen acercarnos con partes nuestra para el
+              despliegue de nuestro ser en su totalidad.
+            </p>
+          </div>
+          <div class="revolucionSolar">
+            <!--cont__solar-->
+            <h3 class="revolucionSolar-title">revolución solar</h3>
+            <p class="revolucionSolar-text">
+              La revolución solar cambia cada año y es como está el cielo en el
+              mismo día hora y minuto en el que nacimos. Esa foto del cielo nos
+              acompaña durante el año y es un “pronóstico” de qué energías nos
+              van a estar acompañando. A través de su análisis podemos abrirnos
+              a recibirlas, potenciarlas y aceptar el proceso que nos propone la
+              vida.
+            </p>
+          </div>
+        </div>
+        <div class="container__consults">
+          <div class="consult">
+            <!--cont__consults-->
+            <h3 class="consult-title">Consulta Carta Natal y Tránsitos</h3>
+            <p class="consult-text">Duración: 1 hora.</p>
+          </div>
+          <div class="consult">
+            <!--cont__consults-->
+            <h3 class="consult-title">Consulta Tránsitos y Revolución Solar</h3>
+            <p class="consult-text">Duración: 1 hora.</p>
+          </div>
+        </div>
+        <div class="consult-description">
+          <p>
+            Para hacerla es necesario saber la fecha, hora y lugar de nacimiento
+            (según la partida de nacimiento)
+          </p>
+          <p>
+            Modalidad Online. La sesión la grabamos y después te envio el audio
+            para que lo puedas volver a escuchar cuando necesites.
+          </p>
+          <p>
+            Medios de pago: Transferencia bancaria – mercado pago (+10%) –
+            paypal para exterior.
+          </p>
+        </div>
+        <div class="vouchers" id="section__vouchers">
+          <h3 class="vouchers-title">Vouchers para regalar</h3>
+          <p class="vouchers-text">Lectura de Carta Natal y Revolución Solar</p>
+        </div>
+        <div class="astrologiaGrupal">
+          <h3 class="astrologiaGrupal-title">
+            Astrología para empresas y/o grupos
+          </h3>
+          <span class="astrologiaGrupal-subtitle">Duración: 1 a 2 horas</span>
+          <p class="astrologiaGrupal-text">
+            Consiste en un encuentro donde a través del análisis de la carta
+            natal de cada integrante del equipo analizamos las energías
+            grupales. Trabajamos en sus puntos fuertes, aquello que traen como
+            desafío y qué energías se traen los unos a los otros como trama
+            grupal. Es un espacio de autoconocimiento y fortalecimiento de
+            equipos de trabajo, tanto a nivel personal como profesional.
+          </p>
+        </div>
+        <div class="astrologiaGrupal-description">
+          <p>
+            Para hacerla es necesario saber la fecha, hora y lugar de nacimiento
+            (según la partida de nacimiento)
+          </p>
+          <p>
+            Modalidad Online. La sesión la grabamos y después te envio el audio
+            para que lo puedas volver a escuchar cuando necesites.
+          </p>
+          <p>
+            Medios de pago: Transferencia bancaria – mercado pago (+10%) –
+            paypal para exterior.
+          </p>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="container__icons">
-            <i class="icons fab fa-facebook"></i>
-            <i class="icons fab fa-instagram"></i>
-            <i class="icons fab fa-facebook"></i>
-        </div>
+      <div class="container__icons">
+        <i class="icons fab fa-facebook"></i>
+        <i class="icons fab fa-instagram"></i>
+        <i class="icons fab fa-facebook"></i>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
