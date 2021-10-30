@@ -22,13 +22,13 @@ header .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
   width: 90%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 header .navBar .nav__img {
@@ -54,7 +54,7 @@ header .navBar .nav__list.show {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 50%;
 }
 
 header .navBar .nav__list.show .nav__list-option {
@@ -163,19 +163,19 @@ header .navBar .hamburger:focus {
   width: 100%;
 }
 
-.container .container__courses .courses-item.courses-item-topLeft {
+.container .container__courses .courses-item.topLeft {
   background-image: url(../img/card-01.png);
 }
 
-.container .container__courses .courses-item.courses-item-topRight {
+.container .container__courses .courses-item.topRight {
   background-image: url(../img/card-02.png);
 }
 
-.container .container__courses .courses-item.courses-item-bottomLeft {
+.container .container__courses .courses-item.bottomLeft {
   background-image: url(../img/card-03.png);
 }
 
-.container .container__courses .courses-item.courses-item-bottomRight {
+.container .container__courses .courses-item.bottomRight {
   background-image: url(../img/card-04.png);
 }
 
@@ -253,7 +253,7 @@ header .navBar .hamburger:focus {
 .container__top {
   background-color: rgba(239, 224, 201, 0.5);
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   width: 90%;
 }
 
@@ -287,30 +287,31 @@ header .navBar .hamburger:focus {
 }
 
 .container__top .container__astrologia .astrologia-text {
+  color: #7b4f1f;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
-  padding: 40px 5px 10px 5px;
-  text-align: left;
+  padding: 40px 30px 10px 30px;
+  text-align: justify;
 }
 
-.container__top .container__cartas .cartaNatal,
-.container__top .container__cartas .transitos,
-.container__top .container__cartas .revolucionSolar {
+.container__top .container__cards .cont__natal,
+.container__top .container__cards .cont__transitos,
+.container__top .container__cards .cont__solar {
   background-color: #e7c6b5;
   border-radius: 10px;
   margin: 1rem auto;
   width: 85%;
 }
 
-.container__top .container__cartas .cartaNatal .cartaNatal-title,
-.container__top .container__cartas .cartaNatal .transitos-title,
-.container__top .container__cartas .cartaNatal .revolucionSolar-title,
-.container__top .container__cartas .transitos .cartaNatal-title,
-.container__top .container__cartas .transitos .transitos-title,
-.container__top .container__cartas .transitos .revolucionSolar-title,
-.container__top .container__cartas .revolucionSolar .cartaNatal-title,
-.container__top .container__cartas .revolucionSolar .transitos-title,
-.container__top .container__cartas .revolucionSolar .revolucionSolar-title {
+.container__top .container__cards .cont__natal .natal-title,
+.container__top .container__cards .cont__natal .transitos-title,
+.container__top .container__cards .cont__natal .solar-title,
+.container__top .container__cards .cont__transitos .natal-title,
+.container__top .container__cards .cont__transitos .transitos-title,
+.container__top .container__cards .cont__transitos .solar-title,
+.container__top .container__cards .cont__solar .natal-title,
+.container__top .container__cards .cont__solar .transitos-title,
+.container__top .container__cards .cont__solar .solar-title {
   color: #75513e;
   font-family: Alike;
   font-size: 18px;
@@ -323,15 +324,15 @@ header .navBar .hamburger:focus {
   width: 100%;
 }
 
-.container__top .container__cartas .cartaNatal .cartaNatal-text,
-.container__top .container__cartas .cartaNatal .transitos-text,
-.container__top .container__cartas .cartaNatal .revolucionSolar-text,
-.container__top .container__cartas .transitos .cartaNatal-text,
-.container__top .container__cartas .transitos .transitos-text,
-.container__top .container__cartas .transitos .revolucionSolar-text,
-.container__top .container__cartas .revolucionSolar .cartaNatal-text,
-.container__top .container__cartas .revolucionSolar .transitos-text,
-.container__top .container__cartas .revolucionSolar .revolucionSolar-text {
+.container__top .container__cards .cont__natal .natal-text,
+.container__top .container__cards .cont__natal .transitos-text,
+.container__top .container__cards .cont__natal .solar-text,
+.container__top .container__cards .cont__transitos .natal-text,
+.container__top .container__cards .cont__transitos .transitos-text,
+.container__top .container__cards .cont__transitos .solar-text,
+.container__top .container__cards .cont__solar .natal-text,
+.container__top .container__cards .cont__solar .transitos-text,
+.container__top .container__cards .cont__solar .solar-text {
   color: #75513e;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -341,21 +342,21 @@ header .navBar .hamburger:focus {
   padding: 5px 1.25rem;
 }
 
-.container__top .container__consults .consult {
+.container__top .container__consults .cont__consults {
   background-color: #dee0d2;
   border-radius: 5px;
   margin: 1rem auto;
   padding: 0.5rem;
 }
 
-.container__top .container__consults .consult .consult-title,
-.container__top .container__consults .consult .consult-text {
+.container__top .container__consults .cont__consults .consults-title,
+.container__top .container__consults .cont__consults .consults-text {
   color: #5b7d6c;
   margin: 0.25rem auto;
   text-align: center;
 }
 
-.container__top .container__consults .consult .consult-title {
+.container__top .container__consults .cont__consults .consults-title {
   font-family: Alike;
   font-size: 14px;
   font-style: normal;
@@ -363,7 +364,7 @@ header .navBar .hamburger:focus {
   line-height: 18px;
 }
 
-.container__top .container__consults .consult .consult-text {
+.container__top .container__consults .cont__consults .consults-text {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -371,7 +372,7 @@ header .navBar .hamburger:focus {
   line-height: 14px;
 }
 
-.container__top .consult-description {
+.container__top .consults-description {
   color: #7b4f1f;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
@@ -380,11 +381,11 @@ header .navBar .hamburger:focus {
   padding: 0 0.25rem 1rem 0.25rem;
 }
 
-.container__top .consult-description p {
+.container__top .consults-description p {
   margin-bottom: 1rem;
 }
 
-.container__top .vouchers {
+.container__top .cont__vouchers {
   border-radius: 5px;
   background-color: #e8ba88;
   padding: 1rem 0.125rem;
@@ -392,24 +393,21 @@ header .navBar .hamburger:focus {
   width: 100%;
 }
 
-.container__top .vouchers .vouchers-title {
-  color: #7b4f1f;
-  font-family: Alike;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 1rem;
-}
-
-.container__top .vouchers .vouchers-text {
+.container__top .cont__vouchers .vouchers-text {
   color: #7b4f1f;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 0 0;
 }
 
-.container__top .astrologiaGrupal {
+.container__top .cont__vouchers .vouchers-subText {
+  color: #7b4f1f;
+  font-size: 14px;
+}
+
+.container__top .cont__astrologiaGrupal {
   background-color: #dee0d2;
   border-radius: 5px;
   display: -webkit-box;
@@ -423,7 +421,7 @@ header .navBar .hamburger:focus {
   padding: 0.5rem 1rem;
 }
 
-.container__top .astrologiaGrupal .astrologiaGrupal-title {
+.container__top .cont__astrologiaGrupal .astrologiaGrupal-title {
   color: #5b7d6c;
   font-family: Alike;
   font-weight: 400;
@@ -433,7 +431,7 @@ header .navBar .hamburger:focus {
   text-align: center;
 }
 
-.container__top .astrologiaGrupal .astrologiaGrupal-subtitle {
+.container__top .cont__astrologiaGrupal .astrologiaGrupal-subtitle {
   color: #5b7d6c;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -443,7 +441,7 @@ header .navBar .hamburger:focus {
   text-align: center;
 }
 
-.container__top .astrologiaGrupal .astrologiaGrupal-text {
+.container__top .cont__astrologiaGrupal .astrologiaGrupal-text {
   color: #5b7d6c;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
@@ -477,10 +475,10 @@ header .navBar .hamburger:focus {
     margin: 10px 0;
     width: 48.25%;
   }
-  .container .container__courses .courses-item.courses-item-topLeft {
+  .container .container__courses .courses-item.topLeft {
     margin-right: 1rem;
   }
-  .container .container__courses .courses-item.courses-item-bottomRight {
+  .container .container__courses .courses-item.bottomRight {
     margin-left: 1rem;
   }
   .container .container__courses .courses-item .courses-item-title {
@@ -547,7 +545,7 @@ header .navBar .hamburger:focus {
     padding: 10px 10px 10px 13rem;
     text-align: left;
   }
-  .container__top .container__cartas {
+  .container__top .container__cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -559,21 +557,21 @@ header .navBar .hamburger:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .container__top .container__cartas .cartaNatal,
-  .container__top .container__cartas .transitos,
-  .container__top .container__cartas .revolucionSolar {
+  .container__top .container__cards .cont__natal,
+  .container__top .container__cards .cont__transitos,
+  .container__top .container__cards .cont__solar {
     margin: 1rem 0;
     width: 32.5%;
   }
-  .container__top .container__cartas .cartaNatal .cartaNatal-title,
-  .container__top .container__cartas .cartaNatal .transitos-title,
-  .container__top .container__cartas .cartaNatal .revolucionSolar-title,
-  .container__top .container__cartas .transitos .cartaNatal-title,
-  .container__top .container__cartas .transitos .transitos-title,
-  .container__top .container__cartas .transitos .revolucionSolar-title,
-  .container__top .container__cartas .revolucionSolar .cartaNatal-title,
-  .container__top .container__cartas .revolucionSolar .transitos-title,
-  .container__top .container__cartas .revolucionSolar .revolucionSolar-title {
+  .container__top .container__cards .cont__natal .natal-title,
+  .container__top .container__cards .cont__natal .transitos-title,
+  .container__top .container__cards .cont__natal .solar-title,
+  .container__top .container__cards .cont__transitos .natal-title,
+  .container__top .container__cards .cont__transitos .transitos-title,
+  .container__top .container__cards .cont__transitos .solar-title,
+  .container__top .container__cards .cont__solar .natal-title,
+  .container__top .container__cards .cont__solar .transitos-title,
+  .container__top .container__cards .cont__solar .solar-title {
     padding: 0.75rem 0;
   }
   .container__top .container__consults {
@@ -584,7 +582,7 @@ header .navBar .hamburger:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .container__top .container__consults .consult {
+  .container__top .container__consults .cont__consults {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -595,25 +593,25 @@ header .navBar .hamburger:focus {
     padding: 0.5rem;
     width: 47.5%;
   }
-  .container__top .container__consults .consult .consult-title {
+  .container__top .container__consults .cont__consults .consults-title {
     font-size: 14px;
     margin-right: 0.5rem;
   }
-  .container__top .container__consults .consult .consult-text {
+  .container__top .container__consults .cont__consults .consults-text {
     font-size: 12px;
   }
-  .container__top .consult-description p {
+  .container__top .consults-description p {
     margin-bottom: 1rem;
   }
-  .container__top .consult-description p:nth-child(3) {
+  .container__top .consults-description p:nth-child(3) {
     margin-bottom: 0;
   }
-  .container__top .vouchers {
+  .container__top .cont__vouchers {
     border-radius: 20px;
     margin: 0 auto;
     width: 50%;
   }
-  .container__top .astrologiaGrupal {
+  .container__top .cont__astrologiaGrupal {
     border-radius: 20px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -622,12 +620,12 @@ header .navBar .hamburger:focus {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .container__top .astrologiaGrupal .astrologiaGrupal-title {
+  .container__top .cont__astrologiaGrupal .astrologiaGrupal-title {
     margin: 0 auto;
     padding-left: 5rem;
     width: auto;
   }
-  .container__top .astrologiaGrupal .astrologiaGrupal-subtitle {
+  .container__top .cont__astrologiaGrupal .astrologiaGrupal-subtitle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -638,7 +636,7 @@ header .navBar .hamburger:focus {
     padding-right: 5rem;
     width: auto;
   }
-  .container__top .astrologiaGrupal .astrologiaGrupal-text {
+  .container__top .cont__astrologiaGrupal .astrologiaGrupal-text {
     margin-top: 0.5rem;
   }
 }
@@ -664,7 +662,7 @@ header .navBar .hamburger:focus {
     position: relative;
     width: 24%;
   }
-  .container .container__courses .courses-item.courses-item-topLeft, .container .container__courses .courses-item.courses-item-topRight, .container .container__courses .courses-item.courses-item-bottomLeft, .container .container__courses .courses-item.courses-item-bottomRight {
+  .container .container__courses .courses-item.topLeft, .container .container__courses .courses-item.topRight, .container .container__courses .courses-item.bottomLeft, .container .container__courses .courses-item.bottomRight {
     margin: 0;
   }
   .container .container__courses .courses-item .courses-item-title {
@@ -685,7 +683,7 @@ header .navBar .hamburger:focus {
     background-color: #e7c6b5;
     color: #e0743e;
   }
-  .container .container__courses .courses-item.courses-item-bottomRight h3 {
+  .container .container__courses .courses-item.bottomRight h3 {
     width: 85%;
   }
   .container .container__game {
@@ -711,41 +709,37 @@ header .navBar .hamburger:focus {
   .container__top .container__astrologia .astrologia-title {
     font-size: 22px;
   }
-  .container__top .container__consults .consult {
+  .container__top .container__consults .consults {
     border-radius: 20px;
     margin: 1rem 0;
     padding: 0.5rem;
     width: 49%;
   }
-  .container__top .container__consults .consult .consult-title {
+  .container__top .container__consults .consults .consults-title {
     font-size: 22px;
     margin-right: 0.5rem;
   }
-  .container__top .container__consults .consult .consult-text {
+  .container__top .container__consults .consults .consults-text {
     font-size: 12px;
   }
-  .container__top .vouchers {
+  .container__top .cont__vouchers {
     padding: 2rem;
   }
-  .container__top .vouchers .vouchers-title {
-    font-size: 22px;
-    margin-bottom: 1.5rem;
-  }
-  .container__top .vouchers .vouchers-text {
+  .container__top .cont__vouchers .vouchers-text {
     font-size: 22px;
   }
-  .container__top .astrologiaGrupal {
+  .container__top .cont__astrologiaGrupal {
     padding: 1.5rem;
     width: 85%;
   }
-  .container__top .astrologiaGrupal .astrologiaGrupal-title {
+  .container__top .cont__astrologiaGrupal .astrologiaGrupal-title {
     font-size: 22px;
     padding-left: 7.5rem;
   }
-  .container__top .astrologiaGrupal .astrologiaGrupal-subtitle {
+  .container__top .cont__astrologiaGrupal .astrologiaGrupal-subtitle {
     padding-right: 7.5rem;
   }
-  .container__top .astrologiaGrupal .astrologiaGrupal-text {
+  .container__top .cont__astrologiaGrupal .astrologiaGrupal-text {
     margin-top: 1rem;
   }
 }

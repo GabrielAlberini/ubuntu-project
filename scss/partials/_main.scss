@@ -18,16 +18,16 @@
             padding: 10px;
             position: relative;
             width: 100%;
-            &.courses-item-topLeft {
+            &.topLeft {
                 background-image: url(../img/card-01.png);
             }
-            &.courses-item-topRight {
+            &.topRight {
                 background-image: url(../img/card-02.png);
             }
-            &.courses-item-bottomLeft {
+            &.bottomLeft {
                 background-image: url(../img/card-03.png);
             }
-            &.courses-item-bottomRight {
+            &.bottomRight {
                 background-image: url(../img/card-04.png);
             }
             .courses-item-title {
@@ -101,7 +101,7 @@
 .container__top {
     background-color: rgba(239, 224, 201, 0.5);
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
     width: 90%;
     .container__astrologia {
         background-color: $colorCinco;
@@ -127,23 +127,24 @@
             width: 100%;
         }
         .astrologia-text {
+            color: #7b4f1f;
             font-family: $roboto;
             margin: 0 auto;
-            padding: 40px 5px 10px 5px;
-            text-align: left;
+            padding: 40px 30px 10px 30px;
+            text-align: justify;
         }
     }
-    .container__cartas {
-        .cartaNatal,
-        .transitos,
-        .revolucionSolar {
+    .container__cards {
+        .cont__natal,
+        .cont__transitos,
+        .cont__solar {
             background-color: $colorCuatro;
             border-radius: 10px;
             margin: 1rem auto;
             width: 85%;
-            .cartaNatal-title,
+            .natal-title,
             .transitos-title,
-            .revolucionSolar-title {
+            .solar-title {
                 color: #75513e;
                 font-family: Alike;
                 font-size: 18px;
@@ -155,9 +156,9 @@
                 text-transform: uppercase;
                 width: 100%;
             }
-            .cartaNatal-text,
+            .natal-text,
             .transitos-text,
-            .revolucionSolar-text {
+            .solar-text {
                 color: #75513e;
                 font-family: $roboto;
                 font-style: normal;
@@ -169,25 +170,25 @@
         }
     }
     .container__consults {
-        .consult {
+        .cont__consults {
             background-color: $colorDos;
             border-radius: 5px;
             margin: 1rem auto;
             padding: 0.5rem;
-            .consult-title,
-            .consult-text {
+            .consults-title,
+            .consults-text {
                 color: #5b7d6c;
                 margin: 0.25rem auto;
                 text-align: center;
             }
-            .consult-title {
+            .consults-title {
                 font-family: Alike;
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 18px;
             }
-            .consult-text {
+            .consults-text {
                 font-family: $roboto;
                 font-size: 12px;
                 font-style: normal;
@@ -196,7 +197,7 @@
             }
         }
     }
-    .consult-description {
+    .consults-description {
         color: #7b4f1f;
         font-family: $roboto;
         font-size: 12px;
@@ -207,29 +208,26 @@
             margin-bottom: 1rem;
         }
     }
-    .vouchers {
+    .cont__vouchers {
         border-radius: 5px;
         background-color: $colorTres;
         padding: 1rem 0.125rem;
         text-align: center;
         width: 100%;
-        .vouchers-title {
-            color: #7b4f1f;
-            font-family: Alike;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            margin-bottom: 1rem;
-        }
         .vouchers-text {
             color: #7b4f1f;
             font-family: $roboto;
             font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 0 0 0;
+        }
+        .vouchers-subText {
+            color: #7b4f1f;
             font-size: 14px;
-            line-height: 16px;
         }
     }
-    .astrologiaGrupal {
+    .cont__astrologiaGrupal {
         background-color: $colorDos;
         border-radius: 5px;
         display: flex;
@@ -285,10 +283,10 @@
             .courses-item {
                 margin: 10px 0;
                 width: 48.25%; //MODIFICACIÓN PROPIA
-                &.courses-item-topLeft {
+                &.topLeft {
                     margin-right: 1rem;
                 }
-                &.courses-item-bottomRight {
+                &.bottomRight {
                     margin-left: 1rem;
                 }
                 .courses-item-title {
@@ -345,18 +343,18 @@
                 text-align: left;
             }
         }
-        .container__cartas {
+        .container__cards {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            .cartaNatal,
-            .transitos,
-            .revolucionSolar {
+            .cont__natal,
+            .cont__transitos,
+            .cont__solar {
                 margin: 1rem 0;
                 width: 32.5%;
-                .cartaNatal-title,
+                .natal-title,
                 .transitos-title,
-                .revolucionSolar-title {
+                .solar-title {
                     padding: 0.75rem 0;
                 }
             }
@@ -364,22 +362,22 @@
         .container__consults {
             display: flex;
             justify-content: space-between;
-            .consult {
+            .cont__consults {
                 align-items: center;
                 display: flex;
                 margin: 1rem 0;
                 padding: 0.5rem;
                 width: 47.5%;
-                .consult-title {
+                .consults-title {
                     font-size: 14px;
                     margin-right: 0.5rem;
                 }
-                .consult-text {
+                .consults-text {
                     font-size: 12px;
                 }
             }
         }
-        .consult-description {
+        .consults-description {
             p {
                 margin-bottom: 1rem;
                 &:nth-child(3) {
@@ -387,12 +385,12 @@
                 }
             }
         }
-        .vouchers {
+        .cont__vouchers {
             border-radius: 20px;
             margin: 0 auto;
             width: 50%;
         }
-        .astrologiaGrupal {
+        .cont__astrologiaGrupal {
             border-radius: 20px;
             flex-direction: row;
             flex-wrap: wrap;
@@ -437,10 +435,10 @@
                 padding: 5px;
                 position: relative;
                 width: 24%;
-                &.courses-item-topLeft,
-                &.courses-item-topRight,
-                &.courses-item-bottomLeft,
-                &.courses-item-bottomRight {
+                &.topLeft,
+                &.topRight,
+                &.bottomLeft,
+                &.bottomRight {
                     margin: 0;
                 }
                 .courses-item-title {
@@ -461,7 +459,7 @@
                         color: $colorCuatroButton; // REVISAR
                     }
                 }
-                &.courses-item-bottomRight {
+                &.bottomRight {
                     h3 {
                         width: 85%;
                     }
@@ -492,31 +490,27 @@
             }
         }
         .container__consults {
-            .consult {
+            .consults {
                 border-radius: 20px;
                 margin: 1rem 0;
                 padding: 0.5rem;
                 width: 49%;
-                .consult-title {
+                .consults-title {
                     font-size: 22px;
                     margin-right: 0.5rem;
                 }
-                .consult-text {
+                .consults-text {
                     font-size: 12px;
                 }
             }
         }
-        .vouchers {
+        .cont__vouchers {
             padding: 2rem;
-            .vouchers-title {
-                font-size: 22px;
-                margin-bottom: 1.5rem;
-            }
             .vouchers-text {
                 font-size: 22px;
             }
         }
-        .astrologiaGrupal {
+        .cont__astrologiaGrupal {
             padding: 1.5rem;
             width: 85%;
             .astrologiaGrupal-title {

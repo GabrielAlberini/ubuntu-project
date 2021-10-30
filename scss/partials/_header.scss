@@ -3,10 +3,11 @@ header {
   width: 100%;
   .navBar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
+    // position: fixed; // Revisar
     width: 90%;
-    flex-wrap: wrap;
     .nav__img {
       width: 120px;
       height: auto;
@@ -20,7 +21,7 @@ header {
         align-items: flex-end;
         display: flex;
         flex-direction: column;
-        width: 100%; //REVISAR
+        width: 50%; //REVISAR
         .nav__list-option {
           padding: 1em;
         }
