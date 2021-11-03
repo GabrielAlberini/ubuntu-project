@@ -255,9 +255,12 @@
         background-color: #75513E;        
         @media screen and (min-width: 300px) and (max-width: 835px){
          width: 100%;
-         display: flex;
-         flex-direction: column;   
+         height: auto;
+         display: block; 
          background-color: #b4d3c37a;
+        }
+        @media screen and (min-width: 835px) and (max-width: 1030px){
+            display: block;
         }
     }
     .cont__creation-txt {
@@ -273,6 +276,9 @@
         @media screen and (min-width: 300px) and (max-width: 835px){
             border-radius:20px;
         }
+        @media screen and (min-width: 835px) and (max-width: 1030px){
+            padding: 30px 60px;
+        }
         h4 {
             font-size: 30px;
         }
@@ -285,15 +291,18 @@
         width: 100%;
         height: 100%;
         @media screen and (min-width: 300px) and (max-width: 835px){
-            margin-bottom: 20px;
+            display: none;
+        }
+        @media screen and (min-width: 835px) and (max-width: 1030px){
+            height: auto;
         }
         img {
             width: 100%;
             height: 100%;
             border-radius: 0 20px 20px 0 ;
             object-fit: cover;
-            @media screen and (min-width: 300px) and (max-width: 835px){
-                border-radius:0 0 20px 20px;
+            @media screen and (min-width: 835px) and (max-width: 1030px){
+                display: none;
             }
         }
     }
@@ -321,13 +330,43 @@
         height: 200px;
     }
 }
-
-.imgGame{
+.app__cont-txt {
+    display: none;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(231, 198, 181);
+    color: rgb(230, 115, 53);
+    line-height: 40px;
+    letter-spacing: .5px;
+    font-weight: 500;
+    font-size: 19px;
+    height: 100%;
+    text-align: center;
+    @media screen and (min-width: 300px) and (max-width: 835px){
+        line-height: 20px;
+        font-size: 11px;
+    }
+    p {
+        width:40%;
+        height: auto;
+        margin: auto;
+        @media screen and (min-width: 300px) and (max-width: 835px){
+            width: 90%;
+        }
+        @media screen and (min-width: 835px) and (max-width: 1030px){
+            width: 50%;
+        }
+    }
+}
+/*Clase agregada con JS para que el contendedor de la carta se muestre*/
+.app__cont-show {
+    display: flex;
+}
+.app-txt {
     height: 100%;
     border-radius: 10px;
-    object-fit: cover;
     animation-name: bounce;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-timing-function: linear; 
 }    
 @keyframes bounce {
@@ -338,15 +377,19 @@
         opacity: 1;
     }
 }
-.buttonGame {
+.app-buttonGame {
     padding: 15px;
     border: none;
     border-radius: 5px;
     background-color: #E8BA88;
     color: #7B4F1F;
     font-size: 20px;
+    cursor: pointer;
     margin-top: 40px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.432);
+    &:hover {
+        background-color: #df9546;
+    }
     @media screen and (min-width: 300px) and (max-width: 835px){
         margin-top: 20px;
         font-size: 14px;
@@ -358,11 +401,6 @@
 .buttonHidden {
     display: none;
 }
-.buttonGame:hover {
-    background-color: #7B4F1F;
-    color: #E8BA88; 
-}
-
 
 
 

@@ -16,9 +16,13 @@
 <body>
     <main>
         <section class="container__oraculo">
+            <!-- Aquí, en este contenedor se desarrolla la app de la ruleta de mensajes aleatorios. -->
             <div class="app">
-                <img class="imgGame">
-                <button id="buttonGame" class="buttonGame" onclick="traerDatos()" type="button">VER ORACULO</button>
+                <div class="app__cont-txt">
+                    <p id="app-txt" class="app-txt"></p>
+                </div>
+            <!-- Al hacer click en el botón, éste llama a la función que toma un texto (elemento) de una colección dentro de un array. Ir a archivo app.js para visualizar el proceso. -->
+                <button id="buttonGame" class="app-buttonGame" onclick="contApp()" type="button">VER ORACULO</button>
             </div>
         </section>
         <section class="container">
