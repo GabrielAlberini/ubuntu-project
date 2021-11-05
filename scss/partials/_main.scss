@@ -13,43 +13,43 @@
     .cont__item-gral {
       width: 100%;
       height: 215px;
-      border-radius: 20px;
-      padding: 20px;
-      position: relative;
       display: none;
+      padding: 20px;
+      border-radius: 20px;
+      position: relative;
       .courses-item-title {
         font-size: 2rem;
         text-transform: uppercase;
         color: #f9d8a7;
         line-height: 38px;
-        z-index: 4000;
         position: absolute;
+        z-index: 4000;
       }
       .courses-item-button {
         width: 135px;
         height: 48px;
-        border-radius: 10px;
-        position: absolute;
-        border: none;
-        background-color: #e8ba88;
-        bottom: 20px;
-        right: 20px;
         color: #7b4f1f;
+        background-color: #e8ba88;
+        border: none;
         text-transform: uppercase;
+        border-radius: 10px;
         font-size: 18px;
         font-weight: 400;
         cursor: pointer;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
         z-index: 5000;
       }
     }
     .bg-degrade {
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-radius: 20px;
       width: 100%;
       height: 100%;
       background: linear-gradient(to bottom, #535252, #b4d3c300);
+      border-radius: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
       z-index: 3000;
     }
     .courses-item-1 {
@@ -66,10 +66,10 @@
     }
   }
   .container__reg-card {
-    margin: 40px 0 40px 0;
     display: flex;
     flex-direction: column;
     background-color: #efe0c9;
+    margin: 40px 0 40px 0;
     border-radius: 10px;
     @media screen and (min-width: 300px) and (max-width: 835px) {
       margin: 20px 0 20px 0;
@@ -87,8 +87,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 10px;
         background-color: #e8ba88;
+        border-radius: 10px;
         box-shadow: 0px 4px 4px 0px #00000040;
         z-index: 1000;
         @media screen and (min-width: 300px) and (max-width: 835px) {
@@ -120,11 +120,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 30px;
         color: #75513e;
+        background-color: #efe0c9;
+        padding: 30px;
         text-align: left;
         font-size: 18px;
-        background-color: #efe0c9;
         border-radius: 0 10px 10px 0;
         @media screen and (min-width: 300px) and (max-width: 835px) {
           font-size: 13px;
@@ -135,18 +135,18 @@
     .cont__reg-description {
       width: 100%;
       height: auto;
-      padding: 30px;
       background-color: #f3eee580;
+      padding: 30px;
       @media screen and (min-width: 300px) and (max-width: 835px) {
         padding: 20px;
       }
       .reg-description-title {
-        margin-bottom: 30px;
         color: #75513e;
         font-size: 18px;
+        margin-bottom: 30px;
         @media screen and (min-width: 300px) and (max-width: 835px) {
-          margin-bottom: 15px;
           font-size: 14px;
+          margin-bottom: 15px;
         }
       }
       .cont__reg-description-txt {
@@ -188,9 +188,9 @@
           height: auto;
           display: flex;
           justify-content: space-between;
+          background-color: #dee0d2;
           align-items: center;
           padding: 15px;
-          background-color: #dee0d2;
           border-radius: 20px;
           @media screen and (min-width: 300px) and (max-width: 835px) {
             display: flex;
@@ -200,16 +200,16 @@
             }
           }
           .class-title {
-            font-size: 30px;
             color: #5b7d6c;
+            font-size: 30px;
             @media screen and (min-width: 300px) and (max-width: 835px) {
               font-size: 15px;
             }
           }
           .class-txt {
-            text-decoration: none;
-            font-size: 14px;
             color: #5b7d6c;
+            font-size: 14px;
+            text-decoration: none;
             @media screen and (min-width: 300px) and (max-width: 835px) {
               font-size: 12px;
             }
@@ -225,8 +225,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     @media screen and (min-width: 300px) and (max-width: 835px) {
-      margin-top: 40px;
       height: 126px;
+      margin-top: 40px;
       background-image: url(../../img/astro2.jpg);
       background-repeat: no-repeat;
       background-position: center;
@@ -235,7 +235,6 @@
     img {
       width: 100%;
       height: auto;
-      object-fit: fill;
     }
   }
   .container__creation {
@@ -249,8 +248,8 @@
     height: auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    border-radius: 20px;
     background-color: #75513e;
+    border-radius: 20px;
     @media screen and (min-width: 300px) and (max-width: 835px) {
       width: 100%;
       height: auto;
@@ -267,10 +266,10 @@
     justify-content: center;
     align-items: left;
     padding: 30px;
+    color: #5b7d6c;
+    font-size: 20px;
     background-color: #b4d3c3;
     border-radius: 20px 0 0 20px;
-    font-size: 20px;
-    color: #5b7d6c;
     @media screen and (min-width: 300px) and (max-width: 835px) {
       border-radius: 20px;
     }
@@ -326,23 +325,24 @@
   @media screen and (min-width: 300px) and (max-width: 835px) {
     width: 100%;
     height: 200px;
+    margin: 10px 0 20px 0;
   }
 }
 .app__cont-txt {
-  display: none;
-  align-items: center;
   width: 100%;
-  background-color: rgb(231, 198, 181);
+  height: 100%;
+  display: none; //with js this property disappears
+  align-items: center;
   color: rgb(230, 115, 53);
+  background-color: rgb(231, 198, 181);
+  text-align: center;
+  font-size: 19px;
   line-height: 40px;
   letter-spacing: 0.5px;
   font-weight: 500;
-  font-size: 19px;
-  height: 100%;
-  text-align: center;
   @media screen and (min-width: 300px) and (max-width: 835px) {
-    line-height: 20px;
     font-size: 11px;
+    line-height: 20px;
   }
   p {
     width: 40%;
@@ -407,32 +407,33 @@
 }
 
 .container__top {
+  width: 90%;
   background-color: rgba(239, 224, 201, 0.5);
   border-radius: 10px;
-  margin: 2rem auto 0 auto;
-  width: 90%;
+  margin: 1em auto 0 auto;
   .container__astrologia {
-    background-color: $colorCinco;
-    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
+    width: 97.5%;
+    background-color: $colorCinco;
+    border-radius: 10px;
     margin: 1rem auto;
     position: relative;
-    width: 97.5%;
     .astrologia-title {
-      border-radius: 10px;
-      background-color: $colorTres;
+      width: 100%;
       color: #7b4f1f;
+      background-color: $colorTres;
+      padding: 0.5rem 0;
       font-family: Alike;
       font-size: 18px;
       font-weight: 400;
       line-height: 20px;
-      padding: 0.5rem 0;
-      position: absolute;
       text-align: center;
       text-transform: uppercase;
+      border-radius: 10px;
+      position: absolute;
       top: -10px;
-      width: 100%;
+      box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
     }
     .astrologia-text {
       color: #7b4f1f;
@@ -446,48 +447,48 @@
     .cont__natal,
     .cont__transitos,
     .cont__solar {
-      background-color: $colorCuatro;
-      border-radius: 10px;
-      margin: 1rem auto;
       width: 85%;
+      background-color: $colorCuatro;
+      margin: 1rem auto;
+      border-radius: 10px;
       .natal-title,
       .transitos-title,
       .solar-title {
+        width: 100%;
         color: #75513e;
         font-family: Alike;
         font-size: 18px;
         font-style: normal;
         font-weight: normal;
         line-height: 23px;
-        padding: 0.5rem 0;
         text-align: center;
         text-transform: uppercase;
-        width: 100%;
+        padding: 0.5rem 0;
       }
-      .natal-text,
-      .transitos-text,
-      .solar-text {
+      .text-card {
         color: #75513e;
         font-family: $roboto;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 16px;
-        padding: 5px 1.25rem;
+        text-align: justify;
+        line-height: 18px;
+        padding: 0 15px 20px 15px;
       }
     }
   }
   .container__consults {
     .cont__consults {
       background-color: $colorDos;
-      border-radius: 5px;
       margin: 1rem auto;
       padding: 0.5rem;
+      border-radius: 5px;
       .consults-title,
       .consults-text {
         color: #5b7d6c;
-        margin: 0.25rem auto;
         text-align: center;
+        margin: 0.25rem auto;
       }
       .consults-title {
         font-family: Alike;
@@ -510,56 +511,58 @@
     font-family: $roboto;
     font-size: 12px;
     font-weight: 400;
-    line-height: 12px;
-    padding: 0 0.25rem 1rem 0.25rem;
+    line-height: 15px;
     p {
       margin-bottom: 1rem;
     }
   }
   .cont__vouchers {
-    border-radius: 5px;
-    background-color: $colorTres;
-    padding: 1rem 0.125rem;
-    text-align: center;
     width: 100%;
+    background-color: $colorTres;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 10px;
     .vouchers-text {
       color: #7b4f1f;
       font-family: Alike;
-      font-weight: 400;
-      font-size: 16px;
+      font-size: 12px;
+      font-weight: 600;
       line-height: 24px;
-      margin: 0 0 0 0;
     }
     .vouchers-subText {
       color: #7b4f1f;
       font-family: $roboto;
       font-size: 14px;
+      padding: 5px;
     }
   }
   .cont__astrologiaGrupal {
-    background-color: $colorDos;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    margin: 1.5rem auto 0.75rem auto;
+    background-color: $colorDos;
+    margin: 40px auto;
     padding: 0.5rem 1rem;
+    border-radius: 5px;
     .astrologiaGrupal-title {
       color: #5b7d6c;
       font-family: Alike;
-      font-weight: 400;
       font-size: 14px;
+      font-weight: 400;
       line-height: 18px;
-      margin-bottom: 0.5rem;
       text-align: center;
+      margin-bottom: 0.5rem;
     }
     .astrologiaGrupal-subtitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: #5b7d6c;
       font-family: $roboto;
-      font-weight: 400;
       font-size: 12px;
+      font-weight: 400;
       line-height: 14px;
-      margin-bottom: 0.5rem;
       text-align: center;
+      margin-bottom: 0.5rem;
     }
     .astrologiaGrupal-text {
       color: #5b7d6c;
@@ -574,54 +577,57 @@
     p {
       color: #7b4f1f;
       font-family: $roboto;
-      font-weight: 400;
       font-size: 12px;
+      font-weight: 400;
       line-height: 12px;
-      margin: 0 auto 0.75rem auto;
+      margin: 0 auto 0.75rem auto;  
     }
   }
 }
 
 @media only screen and (min-width: 576px) {
   .container__main {
+    width: 100%;
     height: auto;
     padding-top: 110px;
-    width: 100%;
     .container__courses {
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 0;
       padding: 0 1rem; //MODIFICACIÓN PROPIA
-      width: 100%;
       .courses-item {
-        // background: linear-gradient(
-        //   180deg,
-        //   #535252 0%,
-        //   rgba(180, 211, 195, 0) 100%
-        // );
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 20px;
-        // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); // VER TEMA DEL BORDE QUE GENERA
+        width: 48.25%;
         height: 175px;
+        border-radius: 20px;
         margin: 10px 0;
         padding: 10px;
         position: relative;
-        width: 48.25%;
         &.topLeft {
           background-image: url(../img/card-01.png);
           margin-right: 1rem;
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         }
         &.topRight {
           background-image: url(../img/card-02.png);
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         }
         &.bottomLeft {
           background-image: url(../img/card-03.png);
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         }
         &.bottomRight {
           background-image: url(../img/card-04.png);
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
           margin-left: 1rem;
         }
         .courses-item-title {
@@ -684,6 +690,7 @@
       margin: 1rem 0;
       position: relative;
       width: 100%;
+      height: 146px;
       .astrologia-title {
         align-items: center;
         display: flex;
@@ -693,13 +700,17 @@
         height: 100%;
         top: 0;
         width: 12rem;
+        box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
       }
       .astrologia-text {
+        display: flex;
+        align-items: center;
         font-family: $roboto;
-        font-size: 14px;
+        font-size: 18px;
         margin: 0 auto;
         padding: 10px 10px 10px 13rem;
         text-align: left;
+        color: #75513E;
       }
     }
     .container__cards {
@@ -709,13 +720,8 @@
       .cont__natal,
       .cont__transitos,
       .cont__solar {
-        margin: 1rem 0;
-        width: 32.5%;
-        .natal-title,
-        .transitos-title,
-        .solar-title {
-          padding: 0.75rem 0;
-        }
+        padding: 20px 0;
+        width: 31.5%;
       }
     }
     .container__consults {
@@ -737,7 +743,9 @@
       }
     }
     .consults-description {
+      margin: 30px 0 30px 20px;
       p {
+        font-size: 14px;
         margin-bottom: 1rem;
         &:nth-child(3) {
           margin-bottom: 0;
@@ -755,7 +763,6 @@
       flex-wrap: wrap;
       .astrologiaGrupal-title {
         margin: 0 auto;
-        padding-left: 5rem;
         width: auto;
       }
       .astrologiaGrupal-subtitle {
@@ -846,6 +853,7 @@
       padding: 0 2rem;
       .astrologia-title {
         font-size: 22px;
+        box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
       }
     }
     .container__consults {
@@ -855,7 +863,7 @@
         padding: 0.5rem;
         width: 49%;
         .consults-title {
-          font-size: 30px;
+          font-size: 25px;
           margin-right: 0.5rem;
         }
         .consults-text {
@@ -864,8 +872,9 @@
       }
     }
     .cont__vouchers {
-      padding: 2rem;
+      padding: 1rem 2rem;
       .vouchers-text {
+        margin: 5px 0;
         font-size: 22px;
       }
     }
@@ -874,13 +883,25 @@
       width: 85%;
       .astrologiaGrupal-title {
         font-size: 22px;
-        padding-left: 7.5rem;
-      }
-      .astrologiaGrupal-subtitle {
-        padding-right: 7.5rem;
       }
       .astrologiaGrupal-text {
-        margin-top: 1rem;
+        margin: 30px 30px 0 30px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: justify;
+      }
+    }
+    .astrologiaGrupal-description {
+      color: #7b4f1f;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    padding: 0 0.25;
+    margin: 0 0 10px 20px;
+      p {
+        font-size: 14px;
+    margin-bottom: 1rem;
       }
     }
   }

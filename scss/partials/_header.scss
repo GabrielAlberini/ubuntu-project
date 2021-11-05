@@ -6,7 +6,7 @@ header {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 3000;
   .navBar {
     background: $colorCinco;
     position: absolute;
@@ -21,6 +21,9 @@ header {
       transform: scale(1, 1);
       .nav__list {
         .nav__list-option {
+          :focus {
+            background-color: red;
+          }
           .nav__list-option-link {
             opacity: 1;
             transition: opacity 250ms ease-in-out 250ms; //fade-in
