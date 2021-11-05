@@ -1,0 +1,132 @@
+header {
+  align-items: center;
+  background: $colorTres;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  .navBar {
+    background: $colorCinco;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+    width: 40%;
+    &.show {
+      transform: scale(1, 1);
+      .nav__list {
+        .nav__list-option {
+          .nav__list-option-link {
+            opacity: 1;
+            transition: opacity 250ms ease-in-out 250ms; //fade-in
+          }
+        }
+      }
+    }
+    .nav__list {
+      padding: 1.5em 0;
+      list-style: none;
+      .nav__list-option {
+        padding: 1em 0 1em 2em;
+        &:hover {
+          background-color: #e0a769;
+        }
+        .nav__list-option-link {
+          text-decoration: none;
+          color: #7b4f1f;
+          cursor: pointer;
+          text-transform: uppercase;
+          font-weight: 400;
+          opacity: 0;
+          transition: opacity 150ms ease-in-out; //fade-out
+        }
+      }
+    }
+  }
+  .hamburger {
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    color: #7b4f1f;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.75rem;
+    height: 100%;
+    margin-right: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:focus {
+      outline: none;
+    }
+  }
+  img {
+    height: 75px;
+    margin-left: 2rem;
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    .navBar {
+      all: unset; // Erases all previous styles // Revise browser support
+      align-items: center;
+      display: flex;
+      height: 100%;
+      .nav__list {
+        display: flex;
+        height: 100%;
+        padding: 0;
+        .nav__list-option {
+          align-items: center;
+          display: flex;
+          margin: 0 0.25rem;
+          padding: 0.5rem 1.5rem;
+          &:hover {
+            background-color: #e0a769;
+          }
+          .nav__list-option-link {
+            opacity: 1;
+            position: relative;
+            &::before {
+              background: #000; // REVISAR COLOR, PREGUNTAR A GABO S.
+              content: "";
+              display: block;
+              height: 3px;
+              position: absolute;
+              top: -0.5em;
+              width: 100%;
+              transform: scale(0, 1);
+              transform-origin: left;
+              transition: transform ease-in-out 250ms;
+            }
+            &:hover::before {
+              transform: scale(1, 1);
+            }
+          }
+        }
+      }
+    }
+    .hamburger {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    .navBar {
+      .nav__list {
+        .nav__list-option {
+          margin: 0 0.75rem;
+        }
+      }
+    }
+  }
+}
