@@ -25,9 +25,6 @@ header {
       transform: scale(1, 1);
       .nav__list {
         .nav__list-option {
-          :focus {
-            background-color: red;
-          }
           .nav__list-option-link {
             opacity: 1;
             transition: opacity 250ms ease-in-out 250ms; //fade-i
@@ -39,14 +36,21 @@ header {
       padding: 1.5em 0;
       list-style: none;
       .nav__list-option {
+        cursor: pointer;
         padding: 1em 0 1em 2em;
+        &:nth-child(3) {
+          a {
+            align-items: center;
+            display: flex;
+            height: 100%;
+          }
+        }
         &:hover {
           background-color: #e0a769;
         }
         .nav__list-option-link {
           text-decoration: none;
           color: #7b4f1f;
-          cursor: pointer;
           text-transform: uppercase;
           font-weight: 400;
           opacity: 0;

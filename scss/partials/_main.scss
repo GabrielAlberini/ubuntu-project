@@ -53,16 +53,16 @@
       z-index: 3000;
     }
     .courses-item-1 {
-      background-image: url(../../img/card1.png);
+      background-image: url(../img/card1.png);
     }
     .courses-item-2 {
-      background-image: url(../../img/card2.png);
+      background-image: url(../img/card2.png);
     }
     .courses-item-3 {
-      background-image: url(../../img/card3.png);
+      background-image: url(../img/card3.png);
     }
     .courses-item-4 {
-      background-image: url(../../img/card4.png);
+      background-image: url(../img/card4.png);
     }
   }
   .container__reg-card {
@@ -223,14 +223,14 @@
   .map {
     width: 100%;
     height: 300px;
-    background-image: url(../../img/astro1.jpg);
+    background-image: url(../img/astro1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
     @media screen and (min-width: 300px) and (max-width: 835px) {
       height: 126px;
       margin-top: 40px;
-      background-image: url(../../img/astro2.jpg);
+      background-image: url(../img/astro2.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -329,7 +329,7 @@
   align-items: flex-start;
   border-radius: 20px;
   position: relative;
-  background-image: url(../../img/cardoraculo.png);
+  background-image: url(../img/cardoraculo.png);
   background-size: cover;
   background-position: center;
   @media screen and (min-width: 300px) and (max-width: 835px) {
@@ -443,7 +443,8 @@
       border-radius: 10px;
       position: absolute;
       top: -10px;
-      box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
+      box-shadow: rgba(0, 0, 0, 25%) 0px 4px 4px 0px;
+        // box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
     }
     .astrologia-text {
       color: #7b4f1f;
@@ -712,7 +713,8 @@
         height: 100%;
         top: 0;
         width: 12rem;
-        box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
+        box-shadow: rgba(0, 0, 0, 25%) 0px 4px 4px 0px;
+        // box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
       }
       .astrologia-text {
         display: flex;
@@ -865,7 +867,8 @@
       padding: 0 2rem;
       .astrologia-title {
         font-size: 22px;
-        box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
+        box-shadow: rgba(0, 0, 0, 25%) 0px 4px 4px 0px;
+        // box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
       }
     }
     .container__consults {

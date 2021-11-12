@@ -35,59 +35,104 @@ window.addEventListener("resize", () => {
   }, 400);
 });
 
+// Function to generate smooth scrolling
+
+const scrollToStart = (origin, target) => {
+  origin.addEventListener("click", () => {
+    let elementPosition = target.getBoundingClientRect().top;
+    let offsetPosition = elementPosition - 100
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  })
+}
+
+const scrollToCenter = (origin, target) => {
+  origin.addEventListener("click", () => {
+    target.scrollIntoView({ block: "center", behavior: "smooth" })
+  })
+}
+
 // Smooth scrolling (header)
+
+// TERAPIAS
 
 const terapia = document.getElementById("terapia");
 
-terapia.addEventListener("click", () => {
-  document
-    .getElementById("section__main")
-    .scrollIntoView({ block: "start", behavior: "smooth" });
-});
+const ver__terapia = document.getElementById("ver__terapia")
+
+scrollToStart(terapia, ver__terapia)
+
+// VOUCHER
 
 const voucher = document.getElementById("voucher");
 
-voucher.addEventListener("click", () => {
-  document
-    .getElementById("section__vouchers")
-    .scrollIntoView({ block: "start", behavior: "smooth" });
-});
+const ver__vouchers = document.getElementById("ver__vouchers")
 
-const meditaciones = document.getElementById("meditaciones");
+scrollToCenter(voucher, ver__vouchers)
 
-// meditaciones.addEventListener("click", () => {
-//   document
-//     .getElementById("")
-//     .scrollIntoView({ block: "start", behavior: "smooth" });
-// });
+// SOBRE MI
 
 const sobreMi = document.getElementById("sobreMi");
 
-// sobreMi.addEventListener("click", () => {
-//   document
-//     .getElementById("")
-//     .scrollIntoView({ block: "start", behavior: "smooth" });
-// });
+const ver__sobreMi = document.getElementById("ver__sobreMi")
 
-const contacto = document.getElementById("contacto");
+scrollToCenter(sobreMi, ver__sobreMi)
 
-// contacto.addEventListener("click", () => {
-//   document
-//     .getElementById("")
-//     .scrollIntoView({ block: "start", behavior: "smooth" });
-// });
+// Smooth scrolling (buttons - NO CARRUSEL)
 
-// Smooth scrolling (buttons)
+// ASTROLOGIA
 
-const verAstrologia = document.getElementById("verAstrologia");
+const astrologia = document.getElementById("astrologia");
 
-console.log(verAstrologia)
+const ver__astrologia = document.getElementById("ver__astrologia")
 
-verAstrologia.addEventListener("click", () => {
-  document
-    .getElementById("astrologia")
-    .scrollIntoView({ block: "start", behavior: "smooth" });
-});
+scrollToStart(astrologia, ver__astrologia)
+
+// smoothScrolling(astrologia, ver__astrologia, scrollingPropsCenter)
+
+// REGISTROS AKASHICOS
+
+const akashicos = document.getElementById("akashicos");
+
+const ver__akashicos = document.getElementById("ver__akashicos")
+
+scrollToStart(akashicos, ver__akashicos)
+
+// REIKI TIBETANO
+
+const reiki = document.getElementById("reiki");
+
+const ver__reiki = document.getElementById("ver__reiki")
+
+scrollToStart(reiki, ver__reiki)
+
+// KUNDALINI YOGA
+
+const kundalini = document.getElementById("kundalini");
+
+const ver__kundalini = document.getElementById("ver__kundalini")
+
+scrollToStart(kundalini, ver__kundalini)
+
+// Smooth scrolling (buttons - CARRUSEL)
+
+const astrologiaCarousel = document.getElementById("astrologiaCarousel");
+
+scrollToStart(astrologiaCarousel, ver__astrologia)
+
+const akashicosCarousel = document.getElementById("akashicosCarousel");
+
+scrollToStart(akashicosCarousel, ver__akashicos)
+
+const reikiCarousel = document.getElementById("reikiCarousel");
+
+scrollToStart(reikiCarousel, ver__reiki)
+
+const kundaliniCarousel = document.getElementById("kundaliniCarousel");
+
+scrollToStart(kundaliniCarousel, ver__kundalini)
 
 // Carousel
 
