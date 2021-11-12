@@ -4,7 +4,6 @@ const body = document.getElementById("body");
 
 window.addEventListener("load", () => {
   setInterval(() => {
-    console.log(body);
     body.classList.remove("preload");
   }, 1);
 });
@@ -79,6 +78,16 @@ const contacto = document.getElementById("contacto");
 // });
 
 // Smooth scrolling (buttons)
+
+const verAstrologia = document.getElementById("verAstrologia");
+
+console.log(verAstrologia)
+
+verAstrologia.addEventListener("click", () => {
+  document
+    .getElementById("astrologia")
+    .scrollIntoView({ block: "start", behavior: "smooth" });
+});
 
 // Carousel
 

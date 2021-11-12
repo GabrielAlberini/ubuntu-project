@@ -7,6 +7,10 @@ header {
   position: fixed;
   width: 100%;
   z-index: 3000;
+  .nav__img {
+    width: 25%;
+    height: auto;
+  }
   .navBar {
     background: $colorCinco;
     position: absolute;
@@ -26,7 +30,7 @@ header {
           }
           .nav__list-option-link {
             opacity: 1;
-            transition: opacity 250ms ease-in-out 250ms; //fade-in
+            transition: opacity 250ms ease-in-out 250ms; //fade-i
           }
         }
       }
@@ -77,6 +81,10 @@ header {
 
 @media only screen and (min-width: 992px) {
   header {
+    .nav__img {
+      width: 130px;
+      height: auto;
+    }
     .navBar {
       all: unset; // Erases all previous styles // Revise browser support
       align-items: center;
@@ -91,27 +99,13 @@ header {
           display: flex;
           margin: 0 0.25rem;
           padding: 0.5rem 1.5rem;
+          
           &:hover {
             background-color: #e0a769;
           }
           .nav__list-option-link {
             opacity: 1;
             position: relative;
-            &::before {
-              background: #000; // REVISAR COLOR, PREGUNTAR A GABO S.
-              content: "";
-              display: block;
-              height: 3px;
-              position: absolute;
-              top: -0.5em;
-              width: 100%;
-              transform: scale(0, 1);
-              transform-origin: left;
-              transition: transform ease-in-out 250ms;
-            }
-            &:hover::before {
-              transform: scale(1, 1);
-            }
           }
         }
       }
@@ -124,6 +118,10 @@ header {
 
 @media only screen and (min-width: 1200px) {
   header {
+    .nav__img {
+      width: auto;
+      height: auto;
+    }
     .navBar {
       .nav__list {
         .nav__list-option {
