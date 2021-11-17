@@ -291,7 +291,6 @@
         font-size: 25px;
       }
     }
-    
   }
   .cont__creation-img {
     width: 30%;
@@ -443,8 +442,7 @@
       border-radius: 10px;
       position: absolute;
       top: -10px;
-      box-shadow: rgba(0, 0, 0, 25%) 0px 4px 4px 0px;
-        // box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
+      box-shadow: 0px 4px 4px 0px #00000040;
     }
     .astrologia-text {
       color: #7b4f1f;
@@ -549,7 +547,6 @@
       padding: 5px;
     }
   }
-  
   .cont__astrologiaGrupal {
     display: flex;
     flex-direction: column;
@@ -594,7 +591,7 @@
       font-size: 12px;
       font-weight: 400;
       line-height: 12px;
-      margin: 0 auto 0.75rem auto;  
+      margin: 0 auto 0.75rem auto;
     }
   }
 }
@@ -622,26 +619,26 @@
           background-image: url(../img/card-01.png);
           margin-right: 1rem;
           background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
         &.topRight {
           background-image: url(../img/card-02.png);
           background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
         &.bottomLeft {
           background-image: url(../img/card-03.png);
           background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
         &.bottomRight {
           background-image: url(../img/card-04.png);
           background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+          background-repeat: no-repeat;
+          background-size: cover;
           margin-left: 1rem;
         }
         .courses-item-title {
@@ -713,7 +710,7 @@
         height: 100%;
         top: 0;
         width: 12rem;
-        box-shadow: rgba(0, 0, 0, 25%) 0px 4px 4px 0px;
+        box-shadow: 0px 4px 4px 0px #00000040;
         // box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
       }
       .astrologia-text {
@@ -724,7 +721,7 @@
         margin: 0 auto;
         padding: 10px 10px 10px 13rem;
         text-align: justify;
-        color: #75513E;
+        color: #75513e;
       }
     }
     .container__cards {
@@ -835,8 +832,8 @@
           right: 1rem;
           width: 100px;
           &:hover {
-            background-color: $colorCuatro; // REVISAR
-            color: $colorCuatroButton; // REVISAR
+            background-color: $colorCuatro;
+            color: $colorCuatroButton;
           }
         }
         &.bottomRight {
@@ -853,8 +850,8 @@
         border-radius: 10px;
         font-size: 21px;
         &:hover {
-          background-color: $colorCuatro; // REVISAR
-          color: $colorCuatroButton; // REVISAR
+          background-color: $colorCuatro;
+          color: $colorCuatroButton;
         }
       }
     }
@@ -867,8 +864,7 @@
       padding: 0 2rem;
       .astrologia-title {
         font-size: 22px;
-        box-shadow: rgba(0, 0, 0, 25%) 0px 4px 4px 0px;
-        // box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
+        box-shadow: 0px 4px 4px 0px #00000040;
       }
     }
     .container__consults {
@@ -908,15 +904,15 @@
     }
     .astrologiaGrupal-description {
       color: #7b4f1f;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 12px;
-    padding: 0 0.25;
-    margin: 0 0 10px 20px;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 12px;
+      padding: 0 0.25;
+      margin: 0 0 10px 20px;
       p {
         font-size: 14px;
-    margin-bottom: 1rem;
+        margin-bottom: 1rem;
       }
     }
   }

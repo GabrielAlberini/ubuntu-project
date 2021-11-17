@@ -992,8 +992,8 @@ header img {
   border-radius: 10px;
   position: absolute;
   top: -10px;
-  -webkit-box-shadow: black 0px 4px 4px 0px;
-          box-shadow: black 0px 4px 4px 0px;
+  -webkit-box-shadow: 0px 4px 4px 0px #00000040;
+          box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .container__top .container__astrologia .astrologia-text {
@@ -1313,8 +1313,8 @@ header img {
     height: 100%;
     top: 0;
     width: 12rem;
-    -webkit-box-shadow: black 0px 4px 4px 0px;
-            box-shadow: black 0px 4px 4px 0px;
+    -webkit-box-shadow: 0px 4px 4px 0px #00000040;
+            box-shadow: 0px 4px 4px 0px #00000040;
   }
   .container__top .container__astrologia .astrologia-text {
     display: -webkit-box;
@@ -1328,7 +1328,7 @@ header img {
     margin: 0 auto;
     padding: 10px 10px 10px 13rem;
     text-align: justify;
-    color: #75513E;
+    color: #75513e;
   }
   .container__top .container__cards {
     display: -webkit-box;
@@ -1485,8 +1485,8 @@ header img {
   }
   .container__top .container__astrologia .astrologia-title {
     font-size: 22px;
-    -webkit-box-shadow: black 0px 4px 4px 0px;
-            box-shadow: black 0px 4px 4px 0px;
+    -webkit-box-shadow: 0px 4px 4px 0px #00000040;
+            box-shadow: 0px 4px 4px 0px #00000040;
   }
   .container__top .container__consults .cont__consults {
     border-radius: 20px;
