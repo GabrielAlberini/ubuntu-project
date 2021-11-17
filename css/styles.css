@@ -214,12 +214,12 @@ header img {
 }
 
 .container__main .carousel {
+  width: 90%;
   display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 1rem auto 0.5rem auto;
-  max-width: 400px;
   overflow: hidden;
   position: relative;
 }
@@ -229,10 +229,12 @@ header img {
 }
 
 .container__main .carousel .carousel__item img {
-  border-radius: 40px;
+  border-radius: 20px;
   height: auto;
   max-width: 450px;
   width: 100%;
+  -o-object-fit: none;
+     object-fit: none;
 }
 
 .container__main .carousel .carousel__item .carousel-item-title {
@@ -245,14 +247,13 @@ header img {
   max-width: 400px;
   position: absolute;
   text-transform: uppercase;
-  top: 1.5rem;
+  top: .8rem;
 }
 
 .container__main .carousel .carousel__item .carousel-item-button {
   background: #e8ba88;
   border: none;
   border-radius: 10px;
-  bottom: 2rem;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   color: #7b4f1f;
@@ -264,7 +265,8 @@ header img {
   height: 34px;
   line-height: 21px;
   position: absolute;
-  right: 2rem;
+  bottom: 1rem;
+  right: 1rem;
   text-transform: uppercase;
   width: 125px;
 }
@@ -324,7 +326,7 @@ header img {
 
 @media screen and (min-width: 300px) and (max-width: 835px) {
   .container {
-    padding: 3% 5%;
+    padding: 0 5% 3% 5%;
   }
 }
 
@@ -636,7 +638,7 @@ header img {
             flex-direction: column;
   }
   .container .container__reg-card .container__classes-bg .container__classes .cont__classes:first-child {
-    margin-bottom: 15px;
+    margin: 20px 0 15px 0;
   }
 }
 
@@ -680,6 +682,7 @@ header img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-top: 0;
   }
 }
 
@@ -714,18 +717,23 @@ header img {
   border-radius: 20px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 835px) {
+@media screen and (min-width: 835px) and (max-width: 1030px) {
   .container .cont__creation {
-    width: 100%;
-    height: auto;
-    display: block;
-    background-color: #b4d3c37a;
+    width: 90%;
   }
 }
 
-@media screen and (min-width: 835px) and (max-width: 1030px) {
+@media screen and (min-width: 300px) and (max-width: 835px) {
   .container .cont__creation {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -745,16 +753,14 @@ header img {
       -ms-flex-align: left;
           align-items: left;
   padding: 30px;
-  color: #5b7d6c;
-  font-size: 16px;
-  text-align: justify;
-  background-color: #b4d3c3;
   border-radius: 20px 0 0 20px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 835px) {
   .container .cont__creation-txt {
+    width: 100%;
     border-radius: 20px;
+    padding: 15px 15px 0 15px;
   }
 }
 
@@ -768,13 +774,29 @@ header img {
   font-size: 30px;
 }
 
-.container .cont__creation-txt p {
+.container .cont__creation-txt .creation-txt {
+  color: #5b7d6c;
+  font-size: 16px;
+  text-align: justify;
   margin: 20px 0 20px 0;
   font-size: 16px;
 }
 
-.container .cont__creation-txt p:nth-child(1) {
+.container .cont__creation-txt .creation-txt:nth-child(1) {
   font-size: 25px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 835px) {
+  .container .cont__creation-txt .creation-txt:nth-child(1) {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 835px) {
+  .container .cont__creation-txt .creation-txt:nth-child(3) {
+    display: none;
+  }
 }
 
 .container .cont__creation-img {
@@ -784,13 +806,34 @@ header img {
 
 @media screen and (min-width: 300px) and (max-width: 835px) {
   .container .cont__creation-img {
-    display: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 15px 15px 15px;
   }
 }
 
-@media screen and (min-width: 835px) and (max-width: 1030px) {
-  .container .cont__creation-img {
-    height: auto;
+.container .cont__creation-img .creation-img-txt {
+  display: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 835px) {
+  .container .cont__creation-img .creation-img-txt {
+    display: block;
+  }
+}
+
+.container .cont__creation-img .txt-img-sobremi {
+  display: none;
+  color: #5b7d6c;
+}
+
+@media screen and (min-width: 300px) and (max-width: 835px) {
+  .container .cont__creation-img .txt-img-sobremi {
+    display: block;
+    margin: auto 0;
+    font-size: 14px;
   }
 }
 
@@ -802,9 +845,9 @@ header img {
      object-fit: cover;
 }
 
-@media screen and (min-width: 835px) and (max-width: 1030px) {
+@media screen and (min-width: 300px) and (max-width: 835px) {
   .container .cont__creation-img img {
-    display: none;
+    width: 50%;
   }
 }
 
@@ -1048,6 +1091,14 @@ header img {
   padding: 0 15px;
 }
 
+@media screen and (min-width: 300px) and (max-width: 835px) {
+  .container__top .container__cards .cont__natal .text-card,
+  .container__top .container__cards .cont__transitos .text-card,
+  .container__top .container__cards .cont__solar .text-card {
+    padding: 15px 15px;
+  }
+}
+
 .container__top .container__consults .cont__consults {
   background-color: #dee0d2;
   margin: 1rem auto;
@@ -1090,6 +1141,13 @@ header img {
   margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 300px) and (max-width: 835px) {
+  .container__top .consults-description p {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+
 .container__top .cont__vouchers {
   width: 100%;
   background-color: #e8ba88;
@@ -1105,8 +1163,20 @@ header img {
   font-size: 25px;
 }
 
+@media screen and (min-width: 300px) and (max-width: 835px) {
+  .container__top .cont__vouchers .vouchers-text {
+    font-size: 12px;
+  }
+}
+
 .container__top .cont__vouchers .vouchers-text:nth-child(3) {
   font-size: 16px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 835px) {
+  .container__top .cont__vouchers .vouchers-text:nth-child(3) {
+    font-size: 11px;
+  }
 }
 
 .container__top .cont__vouchers .vouchers-subText {
@@ -1128,6 +1198,12 @@ header img {
   margin: 40px auto;
   padding: 0.5rem 1rem;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 835px) {
+  .container__top .cont__astrologiaGrupal {
+    margin: 20px auto;
+  }
 }
 
 .container__top .cont__astrologiaGrupal .astrologiaGrupal-title {
@@ -1202,7 +1278,6 @@ header img {
   .container__main .container__courses .courses-item {
     width: 48.25%;
     height: 175px;
-    border-radius: 20px;
     margin: 10px 0;
     padding: 10px;
     position: relative;
@@ -1234,6 +1309,7 @@ header img {
     margin-left: 1rem;
   }
   .container__main .container__courses .courses-item .courses-item-title {
+    width: 50%;
     font-size: 25px;
     color: #f9d8a7;
     font-family: Alike;
@@ -1435,17 +1511,27 @@ header img {
   .container__main .container__courses .courses-item {
     height: 175px;
     margin: 0;
-    padding: 5px;
+    padding: 0;
     position: relative;
     width: 24%;
   }
   .container__main .container__courses .courses-item.topLeft, .container__main .container__courses .courses-item.topRight, .container__main .container__courses .courses-item.bottomLeft, .container__main .container__courses .courses-item.bottomRight {
     margin: 0;
   }
+  .container__main .container__courses .courses-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.336);
+  }
   .container__main .container__courses .courses-item .courses-item-title {
     font-size: 24px;
     left: 1rem;
     top: 0.5rem;
+    z-index: 100000;
   }
   .container__main .container__courses .courses-item .courses-item-button {
     border-radius: 10px;
@@ -1455,6 +1541,7 @@ header img {
     height: 34px;
     right: 1rem;
     width: 100px;
+    z-index: 1000000;
   }
   .container__main .container__courses .courses-item .courses-item-button:hover {
     background-color: #e7c6b5;
