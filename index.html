@@ -32,6 +32,7 @@
     />
     <script src="js/main.js" defer></script>
     <script src="js/app.js" defer></script>
+    <script src="js/carousel.js" defer></script>
   </head>
   <body id="body" class="preload">
     <header>
@@ -68,42 +69,49 @@
     <main>
       <div id="ver__terapia" class="container__main">
         <div class="carousel">
-          <div class="carousel__item carousel__item--visible">
-            <img src="img/card-01.png" />
-            <h3 class="carousel-item-title">astrología</h3>
-            <button id="astrologiaCarousel" class="carousel-item-button">
-              ver más
-            </button>
+          <button class="carousel__button carousel__button--left is-hidden">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <img src="img/card-01.png" class="carousel__image" />
+                <h3 class="carousel__slide-title">astrología</h3>
+                <button id="astrologiaCarousel" class="carousel__slide-button">
+                  ver más
+                </button>
+              </li>
+              <li class="carousel__slide">
+                <img src="img/card-02.png" class="carousel__image" />
+                <h3 class="carousel__slide-title">registros akáshicos</h3>
+                <button id="akashicosCarousel" class="carousel__slide-button">
+                  ver más
+                </button>
+              </li>
+              <li class="carousel__slide">
+                <img src="img/card-03.png" class="carousel__image" />
+                <h3 class="carousel__slide-title">reiki tibetano</h3>
+                <button id="reikiCarousel" class="carousel__slide-button">
+                  ver más
+                </button>
+              </li>
+              <li class="carousel__slide">
+                <img src="img/card-04.png" class="carousel__image" />
+                <h3 class="carousel__slide-title">kundalini yoga</h3>
+                <button id="kundaliniCarousel" class="carousel__slide-button">
+                  ver más
+                </button>
+              </li>
+            </ul>
           </div>
-          <div class="carousel__item">
-            <img src="img/card-02.png" />
-            <h3 class="carousel-item-title">registros akáshicos</h3>
-            <button id="akashicosCarousel" class="carousel-item-button">
-              ver más
-            </button>
-          </div>
-          <div class="carousel__item">
-            <img src="img/card-03.png" />
-            <h3 class="carousel-item-title">reiki tibetano</h3>
-            <button id="reikiCarousel" class="carousel-item-button">
-              ver más
-            </button>
-          </div>
-          <div class="carousel__item">
-            <img src="img/card-04.png" />
-            <h3 class="carousel-item-title">kundalini yoga</h3>
-            <button id="kundaliniCarousel" class="carousel-item-button">
-              ver más
-            </button>
-          </div>
-
-          <div class="carousel__actions">
-            <button id="carousel__button--prev" aria-label="Previous slide">
-              <
-            </button>
-            <button id="carousel__button--next" aria-label="Next slide">
-              >
-            </button>
+          <button class="carousel__button carousel__button--right">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
           </div>
         </div>
         <div class="container__courses">
@@ -387,7 +395,7 @@
           <div class="container__map">
             <div class="map"></div>
           </div>
-          <section id="sobreMi" class="container__creation">
+          <section id="ver__sobreMi" class="container__creation">
             <div class="cont__creation">
               <div class="cont__creation-txt">
                 <p class="creation-txt">La creación</p>
@@ -402,12 +410,12 @@
                   SER.
                 </p>
                 <p class="creation-txt">
-                  "Somos mente cuerpo y espiritu en infinita potencialidad"
+                  "Somos mente cuerpo y espíritu en infinita potencialidad"
                 </p>
               </div>
               <div class="cont__creation-img">
                 <p class="creation-txt txt-img-sobremi">
-                  "Somos mente cuerpo y espiritu en infinita potencialidad"
+                  "Somos mente cuerpo y espíritu en infinita potencialidad"
                 </p>
                 <img
                   src="img/carmen.png"
