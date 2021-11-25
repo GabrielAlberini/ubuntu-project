@@ -287,23 +287,18 @@
   }
   .container__courses {
     display: grid;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
-    @media screen and (min-width: 835px) and (max-width: 1030px) {
+    @media screen and (min-width: 835px) and (max-width: 1200px) {
       grid-template-columns: repeat(2, 2fr);
-      gap: 30px;
+      gap: 40px;
     }
     .courses-item {
-      width: 325px;
       height: 215px;
       position: relative;
       border-radius: 20px;
-      @media screen and (min-width: 835px) and (max-width: 1030px) {
-        width: 465px;
-        height: 300px;
-      }
       .cont-img-item {
         width: 100%;
         height: 100%;
@@ -323,16 +318,16 @@
         font-family: Alike;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #F9D8A7;
+        color: #f9d8a7;
         margin: 20px 0 0 20px;
       }
       .courses-item-button {
         width: 135px;
-        height: 48px;
-        color: #7B4F1F;
+        height: 38px;
+        color: #7b4f1f;
         font-size: 15px;
         text-transform: uppercase;
-        background-color: #E8BA88;
+        background-color: #e8ba88;
         border: none;
         border-radius: 10px;
         position: absolute;
@@ -345,7 +340,7 @@
       }
     }
     ::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 100%;
@@ -353,15 +348,12 @@
       left: 0;
       background-color: red;
       z-index: -10;
-      background: linear-gradient(#5352528a,
-      rgba(180, 211, 195, 0));
+      background: linear-gradient(#5352528a, rgba(180, 211, 195, 0));
       border-radius: 20px;
     }
   }
-  
 }
 //App game
-
 .container__oracle {
   width: 100%;
   display: flex;
@@ -414,7 +406,7 @@
     }
   }
 }
-/*Clase agregada con JS para que el contendedor de la carta se muestre*/
+
 .app__cont-show {
   display: flex;
 }
@@ -453,7 +445,6 @@
   }
 }
 
-//Clase que se activa cuando se presiona el botón. La clase se incorpora con JS.
 .buttonHidden {
   display: none;
 }
@@ -664,8 +655,8 @@
       margin: 0 1rem;
       .game__button {
         &:hover {
-          background-color: $colorCuatro; //REVISAR POR POSIBLE ELIMINACIÓN
-          color: $colorCuatroButton; //REVISAR POR POSIBLE ELIMINACIÓN
+          background-color: $colorCuatro;
+          color: $colorCuatroButton;
         }
       }
     }
@@ -780,7 +771,6 @@
 
 @media only screen and (min-width: 992px) {
   .container__main {
-
     .container__game {
       height: 325px;
       margin: 0 1.5rem;

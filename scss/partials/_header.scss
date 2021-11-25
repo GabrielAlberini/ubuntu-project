@@ -8,6 +8,7 @@ header {
   width: 100%;
   z-index: 10000000;
   .nav__img {
+    max-width: 150px;
     width: 25%;
     height: auto;
   }
@@ -86,11 +87,10 @@ header {
 @media only screen and (min-width: 992px) {
   header {
     .nav__img {
-      width: 130px;
       height: auto;
     }
     .navBar {
-      all: unset; // Erases all previous styles // Revise browser support
+      all: unset; // Erases all previous styles
       align-items: center;
       display: flex;
       height: 100%;
@@ -103,7 +103,7 @@ header {
           display: flex;
           margin: 0 0.25rem;
           padding: 0.5rem 1.5rem;
-          
+
           &:hover {
             background-color: #e0a769;
           }
