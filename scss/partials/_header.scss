@@ -39,12 +39,10 @@ header {
       .nav__list-option {
         cursor: pointer;
         padding: 1em 0 1em 2em;
-        &:nth-child(3) {
-          a {
-            align-items: center;
-            display: flex;
-            height: 100%;
-          }
+        a {
+          align-items: center;
+          display: flex;
+          height: 100%;
         }
         &:hover {
           background-color: #e0a769;

@@ -81,7 +81,7 @@ header .navBar .nav__list .nav__list-option {
   padding: 1em 0 1em 2em;
 }
 
-header .navBar .nav__list .nav__list-option:nth-child(3) a {
+header .navBar .nav__list .nav__list-option a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
