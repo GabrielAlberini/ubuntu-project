@@ -46,6 +46,7 @@ header .nav__img {
 header .navBar {
   background: #efe0c9;
   position: absolute;
+  max-width: 300px;
   right: 0;
   text-align: left;
   top: 100%;
@@ -57,7 +58,7 @@ header .navBar {
   transition: -webkit-transform 400ms ease-in-out;
   transition: transform 400ms ease-in-out;
   transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
-  width: 40%;
+  width: 60%;
 }
 
 header .navBar.show {
@@ -72,13 +73,13 @@ header .navBar.show .nav__list .nav__list-option .nav__list-option-link {
 }
 
 header .navBar .nav__list {
-  padding: 1.5em 0;
+  padding: 1em 0;
   list-style: none;
 }
 
 header .navBar .nav__list .nav__list-option {
   cursor: pointer;
-  padding: 1em 0 1em 2em;
+  padding: 0.75em 0 0.75em 2em;
 }
 
 header .navBar .nav__list .nav__list-option a {
@@ -821,7 +822,7 @@ header img {
   margin: 10px 0 20px 0;
 }
 
-@media screen and (min-width: 300px) and (max-width: 835px) {
+@media screen and (min-width: 275px) and (max-width: 835px) {
   .courses {
     display: none;
   }
@@ -1217,7 +1218,7 @@ header img {
   color: #7b4f1f;
   font-family: Alike;
   line-height: 24px;
-  font-size: 25px;
+  font-size: 19px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 835px) {
@@ -1438,7 +1439,7 @@ header img {
   .container__top .cont__vouchers {
     border-radius: 20px;
     margin: 0 auto;
-    width: 50%;
+    width: 75%;
   }
   .container__top .cont__astrologiaGrupal {
     border-radius: 20px;
@@ -1503,12 +1504,12 @@ header img {
   }
   .container__top .container__consults .cont__consults {
     border-radius: 20px;
-    margin: 1rem 0;
+    margin: 0;
     padding: 0.5rem;
     width: 49%;
   }
   .container__top .container__consults .cont__consults .consults-title {
-    font-size: 25px;
+    font-size: 19px;
     margin-right: 0.5rem;
   }
   .container__top .container__consults .cont__consults .consults-text {
@@ -1516,10 +1517,12 @@ header img {
   }
   .container__top .cont__vouchers {
     padding: 1rem 2rem;
+    max-width: 600px;
+    width: 60%;
   }
   .container__top .cont__vouchers .vouchers-text {
     margin: 5px 0;
-    font-size: 25px;
+    font-size: 19px;
   }
   .container__top .cont__astrologiaGrupal {
     padding: 1.5rem;
